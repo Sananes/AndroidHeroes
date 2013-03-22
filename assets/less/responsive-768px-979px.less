@@ -1,0 +1,46 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+	body {
+		padding:0 60px;
+	}
+	.container-fluid {
+		padding:0 70px;
+	}
+	.wrapper {
+		width:auto;
+	}
+	.feat-image-work {
+		width:30% !important;
+	}
+	.main-top .inner-container {
+		min-height: 400px;
+		.logo {
+			margin-top: 60px;
+		}
+		.intro {
+			margin-top: 0px;
+			h2 {
+				font-size:45px;
+				line-height: 48px;
+			}
+		 }
+	}
+  // Fixed grid
+  #grid > .core(@gridColumnWidth768, @gridGutterWidth768);
+
+  // Fluid grid
+  #grid > .fluid(@fluidGridColumnWidth768, @fluidGridGutterWidth768);
+
+  // Input grid
+  #grid > .input(@gridColumnWidth768, @gridGutterWidth768);
+
+  // No need to reset .thumbnails here since it's the same @gridGutterWidth
+
+
+
+}

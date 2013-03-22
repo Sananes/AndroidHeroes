@@ -1,0 +1,1 @@
+/* Custom jQuery */jQuery(document).ready(function(e){var t=e(".carousel");t.find("img:first").parent().addClass("active");t.find(".item:first").addClass("active");t.carousel({interval:4e3});e(".testimonials-carousel").find(".item:last-child").remove()});
