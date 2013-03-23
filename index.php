@@ -131,7 +131,7 @@ get_header();
         </div> <!-- /container-fluid -->
       </section><!-- /about-me -->
 
-       <?php if(has_sub_field('testimonials')): // If there are testimonials show testimonials ?>
+    
        <section class="testimonials">
           <div class="container-fluid">
             <div class="inner-container">
@@ -172,7 +172,7 @@ get_header();
         </div> <!-- /container-fluid -->
     
     </section><!-- /testimonials -->
-  <?php endif; ?>
+
         <section id="get-in-touch" class="contact">
            <div class="contact-inner container-fluid map-frame">
               <div class="row-fluid inner-container">

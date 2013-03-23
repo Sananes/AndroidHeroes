@@ -9,7 +9,14 @@ jQuery(document).ready(function($) {
 		carousel.carousel({
 			interval: 4000
 });
-	
+
+// Remove last testimonial, if empty
+
+var last_testimonial = $('.testimonials-carousel').find('.item:last-child');
+if(last_testimonial.height() === 0) { last_testimonial.remove(); }
+
+// If slide homepage intro is active
+
 		if(slideIntro){
 			$(slideIntro).css({ marginLeft: 20, opacity:0 });
 		slideIntro.animate({
