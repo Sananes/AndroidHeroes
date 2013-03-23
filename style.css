@@ -3444,17 +3444,17 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #97d240;
-  background-image: -moz-linear-gradient(top, #aad240, #79d240);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#aad240), to(#79d240));
-  background-image: -webkit-linear-gradient(top, #aad240, #79d240);
-  background-image: -o-linear-gradient(top, #aad240, #79d240);
-  background-image: linear-gradient(to bottom, #aad240, #79d240);
+  background-color: #97c638;
+  background-image: -moz-linear-gradient(top, #8abe32, #aad240);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8abe32), to(#aad240));
+  background-image: -webkit-linear-gradient(top, #8abe32, #aad240);
+  background-image: -o-linear-gradient(top, #8abe32, #aad240);
+  background-image: linear-gradient(to bottom, #8abe32, #aad240);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaad240', endColorstr='#ff79d240', GradientType=0);
-  border-color: #79d240 #79d240 #56a026;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8abe32', endColorstr='#ffaad240', GradientType=0);
+  border-color: #aad240 #aad240 #7ea026;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #79d240;
+  *background-color: #aad240;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -3467,12 +3467,12 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #79d240;
-  *background-color: #6cc92f;
+  background-color: #aad240;
+  *background-color: #9fc92f;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #61b42b \9;
+  background-color: #8fb42b \9;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3481,12 +3481,12 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #79d240;
-  *background-color: #6cc92f;
+  background-color: #aad240;
+  *background-color: #9fc92f;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #61b42b \9;
+  background-color: #8fb42b \9;
 }
 .btn-secondary {
   color: #ffffff;
@@ -6128,6 +6128,7 @@ li {
   color: #898989;
 }
 .wrapper {
+  position: relative;
   -webkit-box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.8);
   box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.8);
@@ -6306,25 +6307,42 @@ li {
 }
 /* Section :: Testimonials */
 .testimonials {
-  background-color: #f4f5f6;
-  background-image: -moz-linear-gradient(top, #edeef0, #ffffff);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#edeef0), to(#ffffff));
-  background-image: -webkit-linear-gradient(top, #edeef0, #ffffff);
-  background-image: -o-linear-gradient(top, #edeef0, #ffffff);
-  background-image: linear-gradient(to bottom, #edeef0, #ffffff);
+  background-color: #a7a7a7;
+  background-image: -moz-linear-gradient(top, #9d9d9d, #b6b6b6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9d9d9d), to(#b6b6b6));
+  background-image: -webkit-linear-gradient(top, #9d9d9d, #b6b6b6);
+  background-image: -o-linear-gradient(top, #9d9d9d, #b6b6b6);
+  background-image: linear-gradient(to bottom, #9d9d9d, #b6b6b6);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffedeef0', endColorstr='#ffffffff', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9d9d9d', endColorstr='#ffb6b6b6', GradientType=0);
 }
 .testimonials .inner-container {
   padding: 80px 0;
+}
+.testimonials .carousel {
+  min-height: 250px;
+}
+.testimonials h2 {
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.testimonials a {
+  color: #d8dfdd;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.testimonials span {
+  color: #535b59;
+  line-height: 22px;
 }
 .testimonials .center-text {
   padding: 0 0 35px 0;
 }
 .testimonials blockquote {
-  padding: 20px;
-  background: #f8f8f8;
+  padding: 25px;
+  background: #fff;
   border: none;
+  font-family: Georgia !important;
+  font-style: italic !important;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -6339,8 +6357,8 @@ li {
 .testimonials blockquote:after,
 .testimonials blockquote:before {
   border-bottom: 25px solid transparent;
-  border-right: 25px solid #f8f8f8;
-  bottom: -24px;
+  border-right: 25px solid #fff;
+  bottom: -25px;
   content: '';
   position: absolute;
   left: 25px;
@@ -6383,17 +6401,20 @@ li {
 /* Section :: Contact */
 .contact {
   position: relative;
-  height: 700px;
+  min-height: 700px;
 }
 .contact .map-frame {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background: rgba(255, 255, 255, 0.3);
+  background: url('assets/images/google-maps.jpg') no-repeat top left;
 }
 .contact .map-frame iframe {
   opacity: 0.4;
   filter: alpha(opacity=40);
+}
+.contact .inner-container {
+  padding: 60px 0;
+}
+.contact .main-title {
+  padding-bottom: 30px;
 }
 .contact .contact-form {
   background: #ffffff url("assets/images/contact-form-pattern.png") no-repeat top left;
@@ -6403,11 +6424,6 @@ li {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-}
-.contact .contact-inner {
-  position: absolute;
-  width: 100%;
-  top: -650px;
 }
 .contact .form-inner {
   padding: 30px 30px 15px 30px;
@@ -6453,6 +6469,39 @@ li {
 .carousel-fade .carousel-indicators {
   bottom: -120px;
   top: auto;
+}
+.social .dribbble {
+  color: #ea4c89;
+}
+.social .github {
+  color: #364a73;
+}
+.social .twitter {
+  color: #44c7f3;
+}
+.social .linkedin {
+  color: #4c76cb;
+}
+.footer {
+  padding: 20px 0;
+}
+.footer p {
+  padding: 0;
+  margin: 0;
+}
+.footer .social {
+  float: right;
+}
+.footer .inline {
+  display: inline-block;
+}
+.back-top {
+  background: url('assets/images/back-to-top.png') no-repeat top left;
+  width: 40px;
+  height: 40px;
+  text-indent: -999em;
+  margin: 0 auto;
+  display: inline-block;
 }
 /* Import Responsive css */
 /*!

@@ -16,10 +16,10 @@ get_header(); ?>
               <h1 class="logo">Android Heroes</h1>
               <div class="clearfix"></div>
               <div class="row-fluid">
-                <div class="intro span6">
+                <div class="intro slide-intro span6">
                   <h2><?php the_field('intro_title'); ?></h2>
                   <p><?php the_field('intro_description'); ?></p>
-                  <a href="#" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
+                  <a href="#get-in-touch" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
                 </div> <!-- /intro -->
                 <div class="android-slider hidden-phone span9 offset6">
                   <img src="<?php theme_images(); ?>android-phone.png" />
@@ -45,16 +45,6 @@ get_header(); ?>
 
 
 
-                <?php /* if(get_field('image_position') == "right")) { ?>
-                  
-                  <script type="text/javascript">
-                    $(document).ready( function() {
-                      var feat_image = $('feat-image-work');
-                      feat_image.appendTo('details');
-                    });
-                  </script>
-
-                <?php } */?>
               
          
                   <div class="feat-image-work" >
@@ -122,7 +112,7 @@ get_header(); ?>
                 <div class="span6">
                   <h2>About Me</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde. </p>
-                 
+                  <div class="social inline"><a href="#dribble" class="dribbble">Dribbble</a>, <a href="#" class="twitter">Twitter</a>, <a href="#" class="github">GitHub</a>, <a class="linkedin" href="#">LinkedIn</a></div>
                 </div> <!-- /span6 -->
 
                  <div class="span6 profile">
@@ -134,6 +124,7 @@ get_header(); ?>
         </div> <!-- /container-fluid -->
       </div><!-- /about-me -->
 
+       <?php if(has_sub_field('testimonials')): // If there are testimonials show testimonials ?>
        <div class="testimonials">
           <div class="container-fluid">
             <div class="inner-container">
@@ -143,7 +134,7 @@ get_header(); ?>
                 </div> <!-- /span12 center-text -->
                 </div> <!-- /row-fluid -->
                 <div class="row-fluid">
-                <div class="testimonials-carousel carousel slide carousel-fade">
+                <div class="testimonials-carousel carousel slide">
   
                     <div class="carousel-inner">
                   <?php $count = 3; ?>
@@ -172,16 +163,18 @@ get_header(); ?>
               </div> <!-- /row-fluid -->
             </div> <!-- /inner-container -->
         </div> <!-- /container-fluid -->
-      </div><!-- /testimonials -->
-
-
-        <div class="contact">
-         <div class="map-frame">
-          <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=San+Francisco,+California&amp;aq=&amp;sll=53.723331,-1.349875&amp;sspn=0.063379,0.132694&amp;ie=UTF8&amp;geocode=FVJmQAIdKAe0-A&amp;split=0&amp;hq=&amp;hnear=San+Francisco,+California&amp;ll=37.77493,-122.419416&amp;spn=0.042332,0.098619&amp;t=m&amp;z=14&amp;output=embed"></iframe>      <div class="container-fluid contact-wrapper">
-            <div class="contact-inner">
-              <h2>Get in touch</h2>
-               <div class="row-fluid inner-container">
-                <div class="contact-form span6">
+      </div>
+    </div><!-- /testimonials -->
+  <?php endif; ?>
+        <div id="get-in-touch" class="contact">
+           <div class="contact-inner container-fluid map-frame">
+              <div class="row-fluid inner-container">
+              <div class="span12 main-title">
+               <h2>Get in touch</h2>
+             </div> <!-- /span12 center-text -->
+        
+               <div class="row-fluid">
+                <div class="contact-form span8">
                   <div class="form-inner">
                     <form>
                       <div class="input-prepend">
@@ -210,18 +203,17 @@ get_header(); ?>
                         </div>
                         <label>Your message</label>
                         <textarea rows="6"></textarea>
-                          <button type="submit" class="btn btn-success">Talk to me today</button>
-                      
-                      </div>
-                    </form>
-                  </div> <!-- /contact-form -->
-             
+                          <div style="padding-top:15px"><button type="submit" class="btn btn-success btn-large">Talk to me today</button></div>
+                       </form>
+                      </div> <!-- /form-inner -->
+                    </div> <!-- /contact-form -->
+          
 
              
               </div> <!-- /row-fluid -->
+
         </div> <!-- /container-fluid -->
       </div><!-- /contact-inner -->
-      </div><!-- /map-frame -->
       </div><!-- /contact -->
 
        

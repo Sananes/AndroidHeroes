@@ -16,6 +16,7 @@ ul, li {
   color:@grayLight;
 }
 .wrapper {
+  position:relative;
 	background: #fff;
 	.box-shadow(1px 0px 6px 0px rgba(0,0,0,0.8));
 	background: #fff;
@@ -167,17 +168,34 @@ ul, li {
 /* Section :: Testimonials */
 
 .testimonials {
-  #gradient > .vertical(#edeef0, #fff);
+  #gradient > .vertical(#9d9d9d,#b6b6b6);
   .inner-container {
     padding: 80px 0;
+  }
+  .carousel {
+    min-height:250px;
+  }
+  h2 {
+    color: #fff;
+    text-shadow:(0px 1px 1px rgba(0,0,0,0.3));
+  }
+  a {
+    color: #d8dfdd;
+    text-shadow:(0px 1px 1px rgba(0,0,0,0.3));
+  }
+  span {
+    color: #535b59;
+    line-height: 22px;
   }
   .center-text {
     padding: 0 0 35px 0;
   }
   blockquote {
-    padding:20px;
-    background:#f8f8f8;
+    padding:25px;
+    background:#fff;
     border:none;
+    font-family:Georgia !important;
+    font-style:italic !important;
     .border-radius(5px);
     .box-shadow(0px 1px 3px rgba(0,0,0,.3));
     display: inline-block;
@@ -187,8 +205,8 @@ ul, li {
 
     &:after, &:before {
       border-bottom: 25px solid transparent;
-      border-right: 25px solid #f8f8f8;
-      bottom: -24px;
+      border-right: 25px solid #fff;
+      bottom: -25px;
       content: '';
       position: absolute;
       left: 25px;
@@ -209,9 +227,7 @@ ul, li {
 
 .about-me {
   #gradient > .vertical(#edeef0, #fff);
-  .about-wrapper {
-    
-  }
+
   .inner-container {
     padding: 80px 0;
   }
@@ -228,28 +244,27 @@ ul, li {
 .contact {
 
   position:relative;
-  height:700px;
+  min-height:700px;
 
   .map-frame {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: rgba(255,255,255,0.3);
+    background: url('assets/images/google-maps.jpg') no-repeat top left;
 
     iframe {
       .opacity(40);
     }
+  }
+  .inner-container {
+    padding: 60px 0;
+  }
+  .main-title {
+    padding-bottom:30px;
   }
   .contact-form {
     background:#fff url("assets/images/contact-form-pattern.png") no-repeat top left;
     .box-shadow(0px 1px 3px rgba(0,0,0,0.3));
     .border-radius(5px);
   }
-  .contact-inner {
-    position:absolute;
-    width:100%;
-    top: -650px;
-  }
+
   .form-inner {
     padding: 30px 30px 15px 30px;
   }
@@ -289,6 +304,41 @@ ul, li {
       top: auto;
     }
 
+}
+.social {
+  .dribbble {
+    color: #ea4c89;
+  }
+  .github {
+    color:#364a73;
+  }
+  .twitter {
+    color:#44c7f3;
+  }
+  .linkedin {
+    color: #4c76cb;
+  }
+}
+.footer {
+  padding: 20px 0;
+  p {
+    padding:0;
+    margin:0;
+  }
+  .social {
+    float:right;
+  }
+  .inline {
+    display: inline-block;
+  }
+}
+.back-top {
+  background:url('assets/images/back-to-top.png') no-repeat top left;
+  width:40px;
+  height:40px;
+  text-indent: -999em;
+  margin: 0 auto;
+  display:inline-block;
 }
 /* Import Responsive css */
 @import "responsive.less";
