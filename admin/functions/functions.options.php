@@ -271,7 +271,7 @@ $of_options[] = array( 	"name" 		=> "Styling Options",
 						"type" 		=> "heading"
 				);
 				
-$of_options[] = array( 	"name" 		=> "Theme Stylesheet",
+$of_options[] = array( 	"name" 		=> "Theme  ",
 						"desc" 		=> "Select your themes alternative color scheme.",
 						"id" 		=> "alt_stylesheet",
 						"std" 		=> "default.css",

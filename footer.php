@@ -10,14 +10,13 @@
  */
 ?>
 
-    <div class="footer">
+    <footer class="footer">
 
       <div class="container-fluid">
        <div class="social inline"><a href="#dribble" class="dribbble">Dribbble</a>, <a href="#" class="twitter">Twitter</a>, <a href="#" class="github">GitHub</a>, <a class="linkedin" href="#">LinkedIn</a></div>
       <p class="inline">&copy; Company 2013</p>
      </div> <!-- /container -->
-    </div> <!-- /footer -->
-
+    </footer> <!-- /footer -->
   </div> <!-- /wrapper -->
 
     <div style="width:100%; text-align:center; padding: 30px 0;">  <a href="#top" class="back-top">Back to Top</a></div>

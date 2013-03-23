@@ -3,6 +3,7 @@
  * @package WordPress
  * @subpackage Android Hereoes Framework
  */
+   global $data; //fetch theme options stored in $data
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +16,7 @@
     <meta name="author" content="">
     <!-- Le styles -->
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    <link rel="stylesheet" typer="text/css" media="all" href="<?php echo bloginfo('template_directory') . '/' . $data['alt_stylesheet']; ?>" />
 		<?php wp_head(); ?>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

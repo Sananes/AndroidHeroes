@@ -1,16 +1,18 @@
 @import "bootstrap.less";
-
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic);
 body, html {
   margin:0 !important;
   padding:0;
   background:#f0f0f0;
   color:@grayLight;
+  font-family: 'Roboto', "Helvetica Neue", "Helvetica", Arial, sans-serif;
   }
 h2 {
   color: @green;
 }
 p {
   color: @grayLight;
+  font-weight:300;
 }
 ul, li {
   color:@grayLight;
@@ -18,10 +20,11 @@ ul, li {
 .wrapper {
   position:relative;
 	background: #fff;
-	.box-shadow(1px 0px 6px 0px rgba(0,0,0,0.8));
+	.box-shadow(0px 0px 10px 0px rgba(0,0,0,0.3));
 	background: #fff;
 	width:1200px;
 	margin: 0 auto;
+  .border-radius(0px 0px 15px 15px);
 }
 /* Custom container */
 .container {
@@ -55,7 +58,7 @@ ul, li {
   .intro {
 
     margin-top: 79px;
-    text-shadow: 0px 1px 1px rgba(0,0,0,.48);
+    text-shadow: 0px 1px 0px rgba(0,0,0,.32);
     padding-bottom: 80px;
 
     h2 { 
@@ -69,6 +72,7 @@ ul, li {
       color: rgba(255,255,255,0.8);
       margin-bottom: 30px;
       font-size:18px;
+      line-height:24px;
     }
     .btn {
       border:1px solid #528e04;
@@ -83,7 +87,9 @@ ul, li {
 .center-text {
   text-align:center;
 }
-
+.featured-work, .portfolio {
+  #gradient > .vertical(#f2f2f2, #fff);
+}
 
 /* Section :: Featured Work */
 .featured-work, .portfolio {
@@ -98,7 +104,6 @@ ul, li {
       float:left;
     }
   }
-  #gradient > .vertical(#f2f2f2, #fff);
 
   .inner-container {
     padding: 70px 0 40px 0;
@@ -122,7 +127,7 @@ ul, li {
     float: left;
   }
   .list-features {
-    background: url("assets/images/noise.png") repeat top left;
+    background: url("assets/images/noisy.png") repeat top left;
     .stroke(rgba(0,0,0,0.32), rgba(0,0,0,0.32), rgba(0,0,0,0.28));
     list-style:none;
     padding:1px;
@@ -149,7 +154,6 @@ ul, li {
 /* Section :: Portfolio */
 
 .portfolio {
-  background: @white !important;
   .center-text {
     margin-bottom: 30px;
   }
@@ -159,6 +163,9 @@ ul, li {
   .portfolio-item {
     margin-bottom: 30px;
 
+    &:nth-of-type(3n+1) {
+      margin-left: 0px;
+    }
     img {
       .border-radius(8px);      
     }
@@ -319,6 +326,9 @@ ul, li {
     color: #4c76cb;
   }
 }
+
+/* Section :: Footer */
+
 .footer {
   padding: 20px 0;
   p {

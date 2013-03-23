@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic);
 .clearfix {
   *zoom: 1;
 }
@@ -258,13 +259,13 @@ a:focus {
   margin-left: 50px;
 }
 .clearall {
-  position: relative;
-  width: auto;
-  float: none;
-  top: inherit;
-  bottom: inherit;
-  left: inherit;
-  right: inherit;
+  position: relative !important;
+  width: auto !important;
+  float: none !important;
+  top: inherit !important;
+  bottom: inherit !important;
+  left: inherit !important;
+  right: inherit !important;
 }
 .container,
 .navbar-static-top .container,
@@ -372,13 +373,13 @@ a:focus {
   margin-left: 50px;
 }
 .clearall {
-  position: relative;
-  width: auto;
-  float: none;
-  top: inherit;
-  bottom: inherit;
-  left: inherit;
-  right: inherit;
+  position: relative !important;
+  width: auto !important;
+  float: none !important;
+  top: inherit !important;
+  bottom: inherit !important;
+  left: inherit !important;
+  right: inherit !important;
 }
 .container,
 .navbar-static-top .container,
@@ -6116,12 +6117,14 @@ html {
   padding: 0;
   background: #f0f0f0;
   color: #898989;
+  font-family: 'Roboto', "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 h2 {
   color: #7ab800;
 }
 p {
   color: #898989;
+  font-weight: 300;
 }
 ul,
 li {
@@ -6129,12 +6132,15 @@ li {
 }
 .wrapper {
   position: relative;
-  -webkit-box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.8);
-  box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   background: #fff;
   width: 1200px;
   margin: 0 auto;
+  -webkit-border-radius: 0px 0px 15px 15px;
+  -moz-border-radius: 0px 0px 15px 15px;
+  border-radius: 0px 0px 15px 15px;
 }
 /* Custom container */
 .container {
@@ -6177,7 +6183,7 @@ li {
 }
 .main-top .intro {
   margin-top: 79px;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.48);
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.32);
   padding-bottom: 80px;
 }
 .main-top .intro h2 {
@@ -6191,6 +6197,7 @@ li {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 30px;
   font-size: 18px;
+  line-height: 24px;
 }
 .main-top .intro .btn {
   border: 1px solid #528e04;
@@ -6203,7 +6210,6 @@ li {
 .center-text {
   text-align: center;
 }
-/* Section :: Featured Work */
 .featured-work,
 .portfolio {
   background-color: #f7f7f7;
@@ -6215,6 +6221,7 @@ li {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffffffff', GradientType=0);
 }
+/* Section :: Featured Work */
 .featured-work.align-right .details,
 .portfolio.align-right .details {
   margin-left: 0px;
@@ -6259,7 +6266,7 @@ li {
 }
 .featured-work .list-features,
 .portfolio .list-features {
-  background: url("assets/images/noise.png") repeat top left;
+  background: url("assets/images/noisy.png") repeat top left;
   border-top: rgba(0, 0, 0, 0.32);
   border-right: rgba(0, 0, 0, 0.32);
   border-left: rgba(0, 0, 0, 0.32);
@@ -6291,14 +6298,14 @@ li {
   border-bottom: none;
 }
 /* Section :: Portfolio */
-.portfolio {
-  background: #ffffff !important;
-}
 .portfolio .center-text {
   margin-bottom: 30px;
 }
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+}
+.portfolio .portfolio-item:nth-of-type(3n+1) {
+  margin-left: 0px;
 }
 .portfolio .portfolio-item img {
   -webkit-border-radius: 8px;
@@ -6482,6 +6489,7 @@ li {
 .social .linkedin {
   color: #4c76cb;
 }
+/* Section :: Footer */
 .footer {
   padding: 20px 0;
 }
@@ -6652,13 +6660,13 @@ li {
     margin-left: 50px;
   }
   .clearall {
-    position: relative;
-    width: auto;
-    float: none;
-    top: inherit;
-    bottom: inherit;
-    left: inherit;
-    right: inherit;
+    position: relative !important;
+    width: auto !important;
+    float: none !important;
+    top: inherit !important;
+    bottom: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
   }
   .container,
   .navbar-static-top .container,
@@ -6766,13 +6774,13 @@ li {
     margin-left: 50px;
   }
   .clearall {
-    position: relative;
-    width: auto;
-    float: none;
-    top: inherit;
-    bottom: inherit;
-    left: inherit;
-    right: inherit;
+    position: relative !important;
+    width: auto !important;
+    float: none !important;
+    top: inherit !important;
+    bottom: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
   }
   .container,
   .navbar-static-top .container,
@@ -7372,8 +7380,40 @@ li {
     display: block;
     text-align: center;
   }
+  .featured-carousel {
+    position: relative !important;
+    width: auto !important;
+    float: none !important;
+    top: inherit !important;
+    bottom: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
+  }
+  .featured-carousel .item {
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .project-image {
+    display: none;
+  }
   .portfolio-item {
+    text-align: center !important;
+    float: left !important;
+    width: 45% !important;
+    margin-left: 30px !important;
+  }
+  .portfolio-item:nth-of-type(2n+1) {
+    margin-left: 0 !important;
+    clear: left !important;
+  }
+  .about-me .profile {
     text-align: center;
+    padding: 20px 0 0 0;
   }
   h2 {
     font-size: 35px !important;
@@ -7390,6 +7430,9 @@ li {
   }
   .wrapper {
     width: auto;
+  }
+  .inner-container {
+    padding: 30px 0 !important;
   }
   .main-top .inner-container {
     min-height: 300px;
@@ -7409,20 +7452,14 @@ li {
     line-height: 52px;
     margin-bottom: 20px;
   }
-  .contact .map-frame {
-    padding: 30px 0 0 0;
+  .contact .input-prepend {
+    margin-right: 0px;
+    float: none;
+    width: 100%;
   }
-  .contact .map-frame iframe {
-    display: none;
-  }
-  .contact .contact-inner {
-    position: relative;
+  .contact input {
     width: auto;
     float: none;
-    top: inherit;
-    bottom: inherit;
-    left: inherit;
-    right: inherit;
   }
   .container {
     width: auto;
@@ -7507,6 +7544,25 @@ li {
   .page-header h1 small {
     display: block;
     line-height: 24px;
+  }
+  .portfolio-item {
+    position: relative !important;
+    width: auto !important;
+    float: none !important;
+    top: inherit !important;
+    bottom: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
+    margin-left: 0px !important;
+  }
+  .portfolio-item:nth-of-type(2n+1) {
+    position: relative !important;
+    width: auto !important;
+    float: none !important;
+    top: inherit !important;
+    bottom: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
   }
   input[type="checkbox"],
   input[type="radio"] {
