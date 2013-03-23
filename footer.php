@@ -13,7 +13,9 @@
     <footer class="footer">
 
       <div class="container-fluid">
-       <div class="social inline"><a href="#dribble" class="dribbble">Dribbble</a>, <a href="#" class="twitter">Twitter</a>, <a href="#" class="github">GitHub</a>, <a class="linkedin" href="#">LinkedIn</a></div>
+      	  <?php while ( have_posts() ) : the_post(); ?>
+       <div class="social inline"><?php the_field('social_media'); ?></div>
+       	<?php endwhile; ?>
       <p class="inline">&copy; Company 2013</p>
      </div> <!-- /container -->
     </footer> <!-- /footer -->
