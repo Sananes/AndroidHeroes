@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 		carousel.carousel({
 			interval: 4000
 });
-		$('.testimonials-carousel').find('.item:last-child').remove();
+	
 		if(slideIntro){
 			$(slideIntro).css({ marginLeft: 20, opacity:0 });
 		slideIntro.animate({

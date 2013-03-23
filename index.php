@@ -141,7 +141,7 @@ get_header(); ?>
                 
                   <?php while(has_sub_field('testimonials')): ?> 
                
-                    <?php if($count == 3) { echo '<div class="item row-fluid">'; } ?>
+                    <?php if($count === 3) { echo '<div class="item row-fluid">'; } ?>
                   <!-- Carousel items -->      
 
                     <div class="span6"><blockquote class="clearfix">

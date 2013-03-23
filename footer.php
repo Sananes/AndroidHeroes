@@ -13,8 +13,9 @@
     <div class="footer">
 
       <div class="container-fluid">
-        <p class="inline">&copy; Company 2013</p> <div class="social inline"><a href="#dribble" class="dribbble">Dribbble</a>, <a href="#" class="twitter">Twitter</a>, <a href="#" class="github">GitHub</a>, <a class="linkedin" href="#">LinkedIn</a></div>
-      </div> <!-- /container -->
+       <div class="social inline"><a href="#dribble" class="dribbble">Dribbble</a>, <a href="#" class="twitter">Twitter</a>, <a href="#" class="github">GitHub</a>, <a class="linkedin" href="#">LinkedIn</a></div>
+      <p class="inline">&copy; Company 2013</p>
+     </div> <!-- /container -->
     </div> <!-- /footer -->
 
   </div> <!-- /wrapper -->
