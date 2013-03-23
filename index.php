@@ -184,7 +184,6 @@ get_header();
                 <div class="contact-form span8">
                   <div class="form-inner">
 <?php
-  $email_address = "aasananes@gmail.com";
 if($_POST[sent]){
  $error = "";
  if(!trim($_POST[your_name])){
@@ -200,45 +199,43 @@ if($_POST[sent]){
  $error .= "<p>Please enter a message</p>";
  }
  if(!$error){
- $email = wp_mail($email_address,trim($_POST[your_name])." sent you a message from ".get_option("blogname"),stripslashes(trim($_POST[your_message])),"From: ".trim($_POST[your_name])." <".trim($_POST[your_email]).">\r\nReply-To:".trim($_POST[your_email],"Phone: ".trim($_POST[your_phone])));
+ $email = wp_mail(get_option("admin_email"),trim($_POST[your_name])." sent you a message from ".get_option("blogname"),stripslashes(trim($_POST[your_message])),"From: ".trim($_POST[your_name])." <".trim($_POST[your_email]).">\r\nReply-To:".trim($_POST[your_email],"Phone: ".trim($_POST[your_phone])));
  }
 }
 ?>
 
- <?php if($email){ ?>
- <p><strong>Message succesfully sent. I'll reply as soon as I can</strong></p>
- <?php } else { if($error) { ?>
- <p><strong>Your messange hasn't been sent</strong><p>
- <?php echo $error; ?>
- <?php } else {  } ?>
- <form action="<?php the_permalink(); ?>" id="contact_me" method="post">
- <input type="hidden" name="sent" id="sent" value="1" />
- <div id="form">
-  <div class="input-prepend">
- <label>Your Name <span class="required">*</span></label>
- <div id="input-field"><input type="text" name="your_name" id="your_name" value="<?php echo $_POST[your_name];?>" /></div>
-</div>
- <div class="input-append">
-  <label>Your Email <span class="required">*</span></label>
+     <?php if($email){ ?>
+     <p><strong>Message succesfully sent. I'll reply as soon as I can</strong></p>
+     <?php } else { if($error) { ?>
+     <p><strong>Your messange hasn't been sent</strong><p>
+     <?php echo $error; ?>
+     <?php } else {  } ?>
+      <form action="<?php the_permalink(); ?>" id="contact_me" method="post">
+       <input type="hidden" name="sent" id="sent" value="1" />
+       <div id="form">
+        <div class="input-prepend">
+       <label>Your Name <span class="required">*</span></label>
+       <div id="input-field"><input type="text" name="your_name" id="your_name" value="<?php echo $_POST[your_name];?>" /></div>
+      </div>
+       <div class="input-append">
+        <label>Your Email <span class="required">*</span></label>
 
- <div id="input-field"><input type="text" name="your_email" id="your_email" value="<?php echo $_POST[your_email];?>" /></div>
- </div>
-  <div class="input-prepend">
-  <label>Phone</label>
+       <div id="input-field"><input type="text" name="your_email" id="your_email" value="<?php echo $_POST[your_email];?>" /></div>
+       </div>
+        <div class="input-prepend">
+        <label>Phone</label>
 
- <div id="input-field"><input type="text" name="your_phone" id="your_phone" value="<?php echo $_POST[your_email];?>" /></div>
- </div>
- <div class="input-append">
-  <label>Subject</label>
- <div id="input-field"><input type="text" name="your_subject" id="your_subject" value="<?php echo $_POST[your_subject];?>" /></div>
-</div>
- <label>Your Message <span class="required">*</span></label>
- <div id="input-field"><textarea name="your_message" id="your_message"><?php echo stripslashes($_POST[your_message]); ?></textarea></div>
- <label> </label>
- <div id="input-field"><button type="submit" name="send" class="btn btn-success btn-large">Talk to me today!</button></div>
-
- 
- </form>
+       <div id="input-field"><input type="text" name="your_phone" id="your_phone" value="<?php echo $_POST[your_email];?>" /></div>
+       </div>
+       <div class="input-append">
+        <label>Subject</label>
+       <div id="input-field"><input type="text" name="your_subject" id="your_subject" value="<?php echo $_POST[your_subject];?>" /></div>
+      </div>
+       <label>Your Message <span class="required">*</span></label>
+       <div id="input-field"><textarea name="your_message" id="your_message"><?php echo stripslashes($_POST[your_message]); ?></textarea></div>
+       <label> </label>
+       <div id="input-field"><button type="submit" name="send" class="btn btn-success btn-large">Talk to me today!</button></div>
+      </form>
  <?php } ?>
                       </div> <!-- /form-inner -->
             

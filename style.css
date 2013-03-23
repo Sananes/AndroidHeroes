@@ -6408,7 +6408,6 @@ li {
 /* Section :: Contact */
 .contact {
   position: relative;
-  min-height: 700px;
 }
 .contact .map-frame {
   background: url('assets/images/google-maps.jpg') no-repeat top left;
