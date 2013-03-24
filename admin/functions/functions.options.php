@@ -205,7 +205,7 @@ $of_options[] = array( 	"name" 		=> "Email Subject",
 						"type" 		=> "text"
 				);
 $of_options[] = array( 	"name" 		=> "Contact Form Button",
-						"desc" 		=> "Enter your email subject",
+						"desc" 		=> "Enter your call to action form button text",
 						"id" 		=> "email_button",
 						"std" 		=> "Talk to me today!",
 						"icon" 		=> true,
