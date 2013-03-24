@@ -228,9 +228,9 @@ $of_options[] = array( 	"name" 		=> "Developer Settings",
 						"type" 		=> "heading"
 				);
 $of_options[] = array( 	"name" 		=> "Portfolio Title",
-						"desc" 		=> "Super awesome marketing speak!",
+						"desc" 		=> "Enter the portfolio title for all developers.",
 						"id" 		=> "portfolio_title",
-						"std" 		=> "rachman.blake@cmshero.es",
+						"std" 		=> "Super awesome marketing speak!",
 						"icon" 		=> true,
 						"type" 		=> "text"
 				);
