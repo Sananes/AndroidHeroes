@@ -114,6 +114,7 @@ $of_options[] = array( 	"name" 		=> "Hello there!",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);
+
 $of_options[] = array( 	"name" 		=> "Company Address",
 						"desc" 		=> "Enter your companie's address",
 						"id" 		=> "address",
@@ -185,7 +186,19 @@ $of_options[] = array( 	"name" 		=> "Theme  ",
 						"type" 		=> "select",
 						"options" 	=> $alt_stylesheets
 				);
-
+$of_options[] = array( 	"name" 		=> "Body Background Color",
+						"desc" 		=> "Pick a background color for the theme (default: #f0f0f0).",
+						"id" 		=> "body_background",
+						"std" 		=> "#f0f0f0",
+						"type" 		=> "color"
+				);
+$of_options[] = array( 	"name" 		=> "Custom CSS",
+						"desc" 		=> "Enter your custom css",
+						"id" 		=> "custom_css",
+						"std" 		=> "",
+						"icon" 		=> true,
+						"type" 		=> "textarea"
+				);
 $of_options[] = array( 	"name" 		=> "Contact Form",
 						"type" 		=> "heading"
 				);
@@ -210,6 +223,23 @@ $of_options[] = array( 	"name" 		=> "Contact Form Button",
 						"std" 		=> "Talk to me today!",
 						"icon" 		=> true,
 						"type" 		=> "text"
+				);
+$of_options[] = array( 	"name" 		=> "Developer Settings",
+						"type" 		=> "heading"
+				);
+$of_options[] = array( 	"name" 		=> "Portfolio Title",
+						"desc" 		=> "Super awesome marketing speak!",
+						"id" 		=> "portfolio_title",
+						"std" 		=> "rachman.blake@cmshero.es",
+						"icon" 		=> true,
+						"type" 		=> "text"
+				);
+$of_options[] = array( 	"name" 		=> "Portfolio Subtitle",
+						"desc" 		=> "Enter the portfolio subtitle for all developers.",
+						"id" 		=> "portfolio_subtitle",
+						"std" 		=> "Here’s a look at some of my professional work",
+						"icon" 		=> true,
+						"type" 		=> "textarea"
 				);
 $of_options[] = array( 	"name" 		=> "General Settings",
 						"type" 		=> "heading"
@@ -363,12 +393,7 @@ $of_options[] = array( 	"name" 		=> "Main Layout",
 				
 
 				
-$of_options[] = array( 	"name" 		=> "Body Background Color",
-						"desc" 		=> "Pick a background color for the theme (default: #fff).",
-						"id" 		=> "body_background",
-						"std" 		=> "",
-						"type" 		=> "color"
-				);
+
 				
 $of_options[] = array( 	"name" 		=> "Header Background Color",
 						"desc" 		=> "Pick a background color for the header (default: #fff).",

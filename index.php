@@ -95,8 +95,8 @@ get_header();
         <section class="portfolio container-fluid">
           <div class="row-fluid inner-container">
             <div class="span12 center-text">
-              <h2>Super awesome marketing speak!</h2>
-              <p class="lead">Here’s a look at some of my professional work</p>
+              <h2><?php $data['portfolio_title']; ?></h2>
+              <p class="lead"><?php $data['portfolio_subtitle']; ?></p>
             </div><!-- /span12 -->
 
               <!-- Here we output the portfolio images -->

@@ -31,6 +31,7 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="<?php if($data['custom_favicon']) { echo $data['custom_favicon']; } else { echo bloginfo('template_directory') . '/assets/images/favicon.png'; } ?>">
 
+    <?php if($data['custom_css'] || $data['body_background']) { echo '<style type="text/css">' . $data['custom_css'] . 'body { background-color: ' . $data['body_background'] . ' !important; } </style>'; } ?>
     
   </head>
 
