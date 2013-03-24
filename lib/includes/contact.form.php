@@ -74,7 +74,7 @@
                                 <div class="input-prepend span6">
                                 <label>Phone</label>
                                <div id="input-field">
-                                <input type="text" name="your_phone" id="your_phone" value="<?php echo $_POST['phone_number'];?>" />
+                                <input type="text" name="phone_number" id="phone_number" value="<?php echo $_POST['phone_number'];?>" />
                                </div>
                                </div> <!-- /Phone number -->
                                <div class="input-append span6">
