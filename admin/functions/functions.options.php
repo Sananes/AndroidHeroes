@@ -204,6 +204,13 @@ $of_options[] = array( 	"name" 		=> "Email Subject",
 						"icon" 		=> true,
 						"type" 		=> "text"
 				);
+$of_options[] = array( 	"name" 		=> "Contact Form Button",
+						"desc" 		=> "Enter your email subject",
+						"id" 		=> "email_button",
+						"std" 		=> "Talk to me today!",
+						"icon" 		=> true,
+						"type" 		=> "text"
+				);
 $of_options[] = array( 	"name" 		=> "General Settings",
 						"type" 		=> "heading"
 				);

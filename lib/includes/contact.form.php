@@ -96,7 +96,7 @@
                                <div id="input-field"><textarea name="your_message" id="your_message"></textarea></div>
                                </div>
                                <label> </label>
-                               <div id="input-field"><button type="submit" name="submit" class="btn btn-success btn-large">Talk to me today!</button></div>
+                               <div id="input-field"><button type="submit" name="submit" class="btn btn-success btn-large"><?php echo $data['email_button']; ?></button></div>
                               <input type="hidden" name="submitted" id="submitted" value="true" />
                                       
                               </form>
