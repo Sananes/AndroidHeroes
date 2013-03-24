@@ -7,6 +7,7 @@
                                   $name = trim($_POST['contactName']);
                                 }
                                 $emotional_state = trim($_POST['emotional_state']);
+                                $phone_number = trim($_POST['phone_number']);
                                 if(trim($_POST['email']) === '')  {
                                   $emailError = 'Please enter your email address.';
                                   $hasError = true;
@@ -31,8 +32,8 @@
                                 if(!isset($hasError)) {
                                   $emailTo = $data['email_address_contact'];
                                   $personalSubject = $data['email_subject'];
-                                  $subject = 'From '.$name. ' : ' .$emotional_state;
-                                  $body = "Name: $name \n\n Emotional State: $emotional_state \n\nEmail: $email \n\nMessage: $your_message";
+                                  $subject = $name. ' : ' .$emotional_state;
+                                  $body = "Name: $name \n\n Emotional State: $emotional_state \n\nPhone Number: $phone_number \n\nEmail: $email \n\nMessage: $your_message";
                                   $headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
                                   wp_mail($emailTo, $subject, $body, $headers);
