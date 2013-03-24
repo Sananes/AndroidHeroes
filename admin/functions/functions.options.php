@@ -204,6 +204,23 @@ $of_options[] = array( 	"name" 		=> "Email Subject",
 						"icon" 		=> true,
 						"type" 		=> "text"
 				);
+$of_options[] = array( 	"name" 		=> "General Settings",
+						"type" 		=> "heading"
+				);
+				
+$of_options[] = array( 	"name" 		=> "Tracking Code",
+						"desc" 		=> "Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your website.",
+						"id" 		=> "google_analytics",
+						"std" 		=> "",
+						"type" 		=> "textarea"
+				);
+
+$of_options[] = array( 	"name" 		=> "Custom Favicon",
+						"desc" 		=> "Upload a 16px x 16px Png/Gif image that will represent your website's favicon.",
+						"id" 		=> "custom_favicon",
+						"std" 		=> "",
+						"type" 		=> "upload"
+				); 
 /* $of_options[] = array( 	"name" 		=> "Media Uploader",
 						"desc" 		=> "Upload images using the native media uploader, or define the URL directly",
 						"id" 		=> "media_upload",
@@ -335,26 +352,7 @@ $of_options[] = array( 	"name" 		=> "Main Layout",
 						)
 				);
 				
-$of_options[] = array( 	"name" 		=> "Custom Favicon",
-						"desc" 		=> "Upload a 16px x 16px Png/Gif image that will represent your website's favicon.",
-						"id" 		=> "custom_favicon",
-						"std" 		=> "",
-						"type" 		=> "upload"
-				); 
-				
-$of_options[] = array( 	"name" 		=> "Tracking Code",
-						"desc" 		=> "Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme.",
-						"id" 		=> "google_analytics",
-						"std" 		=> "",
-						"type" 		=> "textarea"
-				);
-				
-$of_options[] = array( 	"name" 		=> "Footer Text",
-						"desc" 		=> "You can use the following shortcodes in your footer text: [wp-link] [theme-link] [loginout-link] [blog-title] [blog-link] [the-year]",
-						"id" 		=> "footer_text",
-						"std" 		=> "Powered by [wp-link]. Built on the [theme-link].",
-						"type" 		=> "textarea"
-				);
+
 				
 
 				

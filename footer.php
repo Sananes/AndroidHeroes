@@ -16,13 +16,14 @@
       	  <?php while ( have_posts() ) : the_post(); ?>
        <div class="social inline"><?php the_field('social_media'); ?></div>
        	<?php endwhile; ?>
-      <p class="inline">&copy; Company 2013</p>
+      <p class="inline">&copy; <?php echo $data['copyright']; ?> 2013. All rights reserved. Designed &amp; maintained by <a href="http://www.sananes.co">Aaron Sananes</a>. </p>
      </div> <!-- /container -->
     </footer> <!-- /footer -->
   </div> <!-- /wrapper -->
 
     <div style="width:100%; text-align:center; padding: 30px 0;">  <a href="#top" class="back-top">Back to Top</a></div>
   <?php wp_footer(); ?>
+  <?php if($data['google_analytics']) { echo $data['google_analytics']; } ?>
 
 <!--
 	                            ...                         
@@ -80,7 +81,7 @@
                77OD88ZO.                                    
                 .ZD88I.. 
 
-                              
+                    Like a glooove!        
 
 -->
 
