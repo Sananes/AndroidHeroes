@@ -109,13 +109,83 @@ $of_options[] = array( 	"name" 		=> "Home Settings",
 $of_options[] = array( 	"name" 		=> "Hello there!",
 						"desc" 		=> "",
 						"id" 		=> "introduction",
-						"std" 		=> "<h3 style=\"margin: 0 0 10px;\">Welcome to the Options Framework demo.</h3>
-						This is a slightly modified version of the original options framework by Devin Price with a couple of aesthetical improvements on the interface and some cool additional features. If you want to learn how to setup these options or just need general help on using it feel free to visit my blog at <a href=\"http://aquagraphite.com/2011/09/29/slightly-modded-options-framework/\">AquaGraphite.com</a>",
+						"std" 		=> "<h3 style=\"margin: 0 0 10px;\">Welcome to CMSHeroes Framework. </h3>
+						This was designed, developed &amp; maintained by <a href='http://www.sananes.co'>Aaron Sananes.</a>",
 						"icon" 		=> true,
 						"type" 		=> "info"
 				);
-					
-$of_options[] = array( 	"name" 		=> "Media Uploader",
+$of_options[] = array( 	"name" 		=> "Company Address",
+						"desc" 		=> "Enter your companie's address",
+						"id" 		=> "address",
+						"std" 		=> "4th Floor, Star House<br />
+																		15-17 Union Square<br />
+																		San Francisco, California<br />
+																		United States",
+						"icon" 		=> true,
+						"type" 		=> "textarea"
+				);	
+$of_options[] = array( 	"name" 		=> "Phone Number",
+						"desc" 		=> "Enter your company phone number",
+						"id" 		=> "phone_number",
+						"std" 		=> "+ 1 (0) 112 3112 221",
+						"icon" 		=> true,
+						"type" 		=> "text"
+				);	
+$of_options[] = array( 	"name" 		=> "Email Address",
+						"desc" 		=> "Enter your company email address",
+						"id" 		=> "email_address",
+						"std" 		=> "hello@cmshero.es",
+						"icon" 		=> true,
+						"type" 		=> "text"
+				);
+$of_options[] = array( 	"name" 		=> "Tax Information",
+						"desc" 		=> "Enter your company tax information",
+						"id" 		=> "tax",
+						"std" 		=> "
+																	Evisua LTD<br />
+																	Vat number: GB987472263<br /> 
+																	Company Number: 05997321
+                 ",
+						"icon" 		=> true,
+						"type" 		=> "textarea"
+				);	
+$of_options[] = array( 	"name" 		=> "Twitter Username",
+						"desc" 		=> "Enter your company twitter username",
+						"id" 		=> "twitter_username",
+						"std" 		=> "@cmshero",
+						"icon" 		=> true,
+						"type" 		=> "text"
+				);
+$of_options[] = array( 	"name" 		=> "Twitter Link",
+						"desc" 		=> "Enter your company twitter link",
+						"id" 		=> "twitter_link",
+						"std" 		=> "http://www.twitter.com/cmshero",
+						"icon" 		=> true,
+						"type" 		=> "text"
+				);
+$of_options[] = array( 	"name" 		=> "LinkedIn",
+						"desc" 		=> "Enter your company linkedin url",
+						"id" 		=> "linkedin",
+						"std" 		=> "http://www.linkedin.com/cmshero",
+						"icon" 		=> true,
+						"type" 		=> "text"
+				);
+
+
+
+
+$of_options[] = array( 	"name" 		=> "Styling Options",
+						"type" 		=> "heading"
+				);
+				
+$of_options[] = array( 	"name" 		=> "Theme  ",
+						"desc" 		=> "Select your themes alternative color scheme.",
+						"id" 		=> "alt_stylesheet",
+						"std" 		=> "default.css",
+						"type" 		=> "select",
+						"options" 	=> $alt_stylesheets
+				);
+/* $of_options[] = array( 	"name" 		=> "Media Uploader",
 						"desc" 		=> "Upload images using the native media uploader, or define the URL directly",
 						"id" 		=> "media_upload",
 						"std" 		=> "",
@@ -185,15 +255,15 @@ $of_options[] = array( 	"name" 		=> "Hidden option 1",
 						"desc" 		=> "This is a sample hidden option controlled by a <strong>switch</strong> button",
 						"id" 		=> "hidden_switch_ex1",
 						"std" 		=> "Hi, I\'m just a text input - nr 1",
-						"fold" 		=> "switch_ex4", /* the switch hook */
+						"fold" 		=> "switch_ex4", 
 						"type" 		=> "text"
-				);
+				); 
 				
 $of_options[] = array( 	"name" 		=> "Hidden option 2",
 						"desc" 		=> "This is a sample hidden option controlled by a <strong>switch</strong> button",
 						"id" 		=> "hidden_switch_ex2",
 						"std" 		=> "Hi, I\'m just a text input - nr 2",
-						"fold" 		=> "switch_ex4", /* the switch hook */
+						"fold" 		=> "switch_ex4",
 						"type" 		=> "text"
 				);
 				
@@ -267,17 +337,7 @@ $of_options[] = array( 	"name" 		=> "Footer Text",
 						"type" 		=> "textarea"
 				);
 				
-$of_options[] = array( 	"name" 		=> "Styling Options",
-						"type" 		=> "heading"
-				);
-				
-$of_options[] = array( 	"name" 		=> "Theme  ",
-						"desc" 		=> "Select your themes alternative color scheme.",
-						"id" 		=> "alt_stylesheet",
-						"std" 		=> "default.css",
-						"type" 		=> "select",
-						"options" 	=> $alt_stylesheets
-				);
+
 				
 $of_options[] = array( 	"name" 		=> "Body Background Color",
 						"desc" 		=> "Pick a background color for the theme (default: #fff).",
@@ -501,7 +561,7 @@ $of_options[] = array( 	"name" 		=> "Hidden option 1",
 						"desc" 		=> "This is a sample hidden option 1",
 						"id" 		=> "hidden_option_1",
 						"std" 		=> "Hi, I\'m just a text input",
-						"fold" 		=> "offline", /* the checkbox hook */
+						"fold" 		=> "offline", 
 						"type" 		=> "text"
 				);
 				
@@ -509,7 +569,7 @@ $of_options[] = array( 	"name" 		=> "Hidden option 2",
 						"desc" 		=> "This is a sample hidden option 2",
 						"id" 		=> "hidden_option_2",
 						"std" 		=> "Hi, I\'m just a text input",
-						"fold" 		=> "offline", /* the checkbox hook */
+						"fold" 		=> "offline", 
 						"type" 		=> "text"
 				);
 				
@@ -567,7 +627,7 @@ $of_options[] = array( 	"name" 		=> "Transfer Theme Options Data",
 						"std" 		=> "",
 						"type" 		=> "transfer",
 						"desc" 		=> 'You can tranfer the saved options data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click "Import Options".',
-				);
+				); */
 				
 	}//End function: of_options()
 }//End chack if function exists: of_options()

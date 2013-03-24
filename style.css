@@ -1,4 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic);
+/*
+Theme Name: CMSHEROES
+Theme URI: http://www.cmshero.es/
+Description: Theme landing page for Developer & Designers.
+Author: Aaron Sananes
+Author URI: http://www.sananes.co
+Version: 1.0
+
+License:
+License URI:
+
+General comments (optional).
+*/
 .clearfix {
   *zoom: 1;
 }
@@ -6119,6 +6132,9 @@ html {
   color: #898989;
   font-family: 'Roboto', "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
+strong {
+  font-weight: 500;
+}
 h2 {
   color: #7ab800;
 }
@@ -6405,24 +6421,7 @@ li {
   -moz-box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.3);
 }
-/* Section :: Contact */
-.contact {
-  position: relative;
-}
-.contact .map-frame {
-  background: url('assets/images/google-maps.jpg') no-repeat top left;
-}
-.contact .map-frame iframe {
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-}
-.contact .inner-container {
-  padding: 60px 0;
-}
-.contact .main-title {
-  padding-bottom: 30px;
-}
-.contact .contact-form {
+.about-me .contact-form {
   background: #ffffff url("assets/images/contact-form-pattern.png") no-repeat top left;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
@@ -6430,15 +6429,77 @@ li {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  margin-top: 50px;
 }
-.contact .form-inner {
+.about-me .form-inner {
   padding: 30px 30px 15px 30px;
 }
-.contact textarea {
-  width: 92%;
+.about-me .form-inner .input-prepend {
+  margin-left: 0px !important;
 }
-.contact .input-prepend {
-  margin-right: 20px;
+.about-me .form-inner input,
+.about-me .form-inner textarea {
+  width: 96%;
+}
+.about-me .form-inner select {
+  width: 99%;
+}
+.about-me .form-inner .textarea-field {
+  margin-left: 0px !important;
+  overflow: hidden;
+}
+.about-me .form-inner .textarea-field textarea {
+  min-height: 180px;
+}
+/* Section :: Contact */
+#get-in-touch {
+  position: relative;
+}
+#get-in-touch .map {
+  height: 600px;
+  z-index: 50;
+}
+#get-in-touch .main-title {
+  padding-bottom: 30px;
+}
+#get-in-touch .company-information {
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 100;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: -500px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+#get-in-touch .company-information .inner {
+  padding: 15px 30px;
+}
+#get-in-touch .company-information a {
+  border-bottom: 1px solid #ddd;
+}
+#get-in-touch .company-information a:hover {
+  text-decoration: none;
+}
+#get-in-touch .company-information h2 {
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+}
+#get-in-touch .company-information p {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+#get-in-touch .company-information .follow,
+#get-in-touch .company-information .blog,
+#get-in-touch .company-information .email-address,
+#get-in-touch .company-information .phone-number {
+  font-size: 18px;
 }
 .featured-carousel {
   position: absolute;

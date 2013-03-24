@@ -1,7 +1,8 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Android Hereoes Framework
+ * @subpackage Android Hereoes
+ * @author Aaron Sananes
  */
    global $data; //fetch theme options stored in $data
 ?>

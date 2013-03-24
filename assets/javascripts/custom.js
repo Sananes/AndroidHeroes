@@ -1,6 +1,22 @@
 /* Custom jQuery */
 
 jQuery(document).ready(function($) {
+
+// Center function
+$.fn.center = function() {
+    this.css({
+        'position': 'absolute',
+        'left': '50%',
+        'top': '50%'
+    });
+    this.css({
+        'margin-left': -this.width() / 2 + 'px',
+        'margin-top': -this.height() / 2 + 'px'
+    });
+
+    return this;
+};
+
 		var carousel = $('.carousel'),
 						slideIntro = $('.slide-intro'),
 						slideImage = $('.android-slider');
@@ -9,6 +25,9 @@ jQuery(document).ready(function($) {
 		carousel.carousel({
 			interval: 4000
 });
+
+// Center company information
+$('.company-information').center();
 
 // Remove last testimonial, if empty
 
@@ -22,7 +41,7 @@ if(last_testimonial.height() === 0) { last_testimonial.remove(); }
 		slideIntro.animate({
     opacity: 1,
     marginLeft: 0
-  }, 1000, function() {
+  }, 500, function() {
     // Animation complete.
   });
 	}
@@ -39,7 +58,7 @@ var $anchor = $(this);
 
 $('html, body').stop().animate({
     scrollTop: $($anchor.attr('href')).offset().top
-}, 2500,'easeInOutExpo');
+}, 1000,'easeInOutExpo');
 /*
 if you don't want to use the easing effects:
 $('html, body').stop().animate({
@@ -48,4 +67,12 @@ $('html, body').stop().animate({
 */
 e.preventDefault();
 });
+$('#map_canvas').gmap({'center': '37.771054,-122.419453', 'zoom': 14, 'disableDefaultUI':true, 'callback': function() {
+var self = this;
+self.addMarker({'position': this.get('map').getCenter() }).click(function() {
+self.openInfoWindow({ 'content': 'Hello World!' }, this);
+});
+}});
+
+
 });

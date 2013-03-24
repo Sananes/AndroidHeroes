@@ -5,7 +5,8 @@
  * This theme is purely for the purpose of testing theme options in Options Framework plugin.
  *
  * @package WordPress
- * @subpackage Options Framework Theme
+ * @subpackage AndroidHereos
+ * @author Aaron Sananes
  */
 
 get_header();
@@ -23,7 +24,7 @@ get_header();
                 <div class="intro slide-intro span6">
                   <h2><?php the_field('intro_title'); ?></h2>
                   <p><?php the_field('intro_description'); ?></p>
-                  <a href="#get-in-touch" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
+                  <a href="#about" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
                 </div> <!-- /intro -->
                 <div class="android-slider hidden-phone span9 offset6">
                   <?php if(get_field('intro_image')) : ?><img src="<?php the_field('intro_image'); ?>" /><?php else: ?><img src="<?php theme_images(); ?>android-phone.png" /><?php endif; ?>
@@ -113,7 +114,7 @@ get_header();
           </div> <!-- /row-fluid -->
         </section> <!-- /portfolio container-fluid -->
       
-        <section class="about-me">
+        <section id="about" class="about-me">
           <div class="container-fluid about-wrapper">
               <div class="row-fluid inner-container">
                 <div class="span6">
@@ -125,7 +126,14 @@ get_header();
                  <div class="span6 profile">
                   <img src="<?php the_field('profile_image'); ?>" width="350" height="350" class="profile-img" />
                 </div>
-
+                <div class="row-fluid">
+                  <div class="contact-form span12">
+                    <div class="form-inner">
+                      <?php include(TEMPLATEPATH . '/lib/includes/contact.form.php'); ?>
+                      </div> <!-- /form-inner -->
+            
+                    </div> <!-- /get-in-touch -->
+                </div>
              
               </div> <!-- /row-fluid -->
         </div> <!-- /container-fluid -->
@@ -174,80 +182,50 @@ get_header();
     </section><!-- /testimonials -->
 
         <section id="get-in-touch" class="contact">
-           <div class="contact-inner container-fluid map-frame">
-              <div class="row-fluid inner-container">
-              <div class="span12 main-title">
-               <h2>Get in touch</h2>
-             </div> <!-- /span12 center-text -->
-        
-               <div class="row-fluid">
-                <div class="contact-form span8">
-                  <div class="form-inner">
-<?php
-if($_POST[sent]){
- $error = "";
- if(!trim($_POST[your_name])){
- $error .= "<p>Please enter your name</p>";
- }
- if(!filter_var(trim($_POST[your_email]),FILTER_VALIDATE_EMAIL)){
- $error .= "<p>Please enter a valid email address</p>";
- }
- if(!trim($_POST[your_message])){
- $error .= "<p>Please enter a message</p>";
- }
- if(!trim($_POST[your_subject])){
- $error .= "<p>Please enter a message</p>";
- }
- if(!$error){
- $email = wp_mail(get_option("admin_email"),trim($_POST[your_name])." sent you a message from ".get_option("blogname"),stripslashes(trim($_POST[your_message])),"From: ".trim($_POST[your_name])." <".trim($_POST[your_email]).">\r\nReply-To:".trim($_POST[your_email],"Phone: ".trim($_POST[your_phone])));
- }
-}
-?>
 
-     <?php if($email){ ?>
-     <p><strong>Message succesfully sent. I'll reply as soon as I can</strong></p>
-     <?php } else { if($error) { ?>
-     <p><strong>Your messange hasn't been sent</strong><p>
-     <?php echo $error; ?>
-     <?php } else {  } ?>
-      <form action="<?php the_permalink(); ?>" id="contact_me" method="post">
-       <input type="hidden" name="sent" id="sent" value="1" />
-       <div id="form">
-        <div class="input-prepend">
-       <label>Your Name <span class="required">*</span></label>
-       <div id="input-field"><input type="text" name="your_name" id="your_name" value="<?php echo $_POST[your_name];?>" /></div>
-      </div>
-       <div class="input-append">
-        <label>Your Email <span class="required">*</span></label>
 
-       <div id="input-field"><input type="text" name="your_email" id="your_email" value="<?php echo $_POST[your_email];?>" /></div>
-       </div>
-        <div class="input-prepend">
-        <label>Phone</label>
+       
+                
+                <div class="company-information">
+                  <div class="inner">
+                  <h2>Get to know us</h2>
+                  <?php if($data['address']) { ?>
+                  <p class="address">
+                    <!-- 4th Floor, Star House
+                    15-17 Union Square
+                    San Francisco, California
+                    United States -->
+                    <?php echo $data['address']; ?>
+                  </p>
+                  <?php } ?>
+                  <?php if($data['phone_number']) { ?>
+                  <p class="phone-number"><strong>Call:</strong> <?php echo $data['phone_number']; ?></p>
+                  <?php } ?>
+                  <?php if($data['email_address']) { ?>
+                  <p class="email-address"><strong>Email:</strong> <a href="mailto:<?php $data['email_address']; ?>"><?php echo $data['email_address']; ?></a></p>
+                  <?php } ?>
+                  <?php if($data['twitter_link']) { ?>
+                  <p class="follow"><strong>Follow:</strong> <a href="<?php echo $data['twitter_link']; ?>"><?php echo $data['twitter_username']; ?></a></p>
+                  <?php } ?>
 
-       <div id="input-field"><input type="text" name="your_phone" id="your_phone" value="<?php echo $_POST[your_email];?>" /></div>
-       </div>
-       <div class="input-append">
-        <label>Subject</label>
-       <div id="input-field"><input type="text" name="your_subject" id="your_subject" value="<?php echo $_POST[your_subject];?>" /></div>
-      </div>
-       <label>Your Message <span class="required">*</span></label>
-       <div id="input-field"><textarea name="your_message" id="your_message"><?php echo stripslashes($_POST[your_message]); ?></textarea></div>
-       <label> </label>
-       <div id="input-field"><button type="submit" name="send" class="btn btn-success btn-large">Talk to me today!</button></div>
-      </form>
- <?php } ?>
-                      </div> <!-- /form-inner -->
-            
-                    </div> <!-- /get-in-touch -->
-          
+                  <?php if($data['linkedin']) { ?>
+                  <p class="linkedin"><strong>Company Profile:</strong> <a href="<?php echo $data['linkedin']; ?>">LinkedIn</a></p>
+                  <?php } ?>
 
-             
-              </div> <!-- /row-fluid -->
-
-        </div> <!-- /container-fluid -->
-      </div><!-- /contact-inner -->
-      </section><!-- /contact -->
+                  <?php if($data['tax']) { ?>
+                  <p class="tax">
+                    <?php echo $data['tax']; ?>
+                    <!-- Evisua LTD
+                    Vat number: GB987472263 
+                    Company Number: 05997321
+                    -->
+                  </p>
+                  <?php } ?>
+                </div> <!-- /inner -->
+              </div> <!-- /company-information -->
+         
+           <div id="map_canvas" class="map">     </div> <!-- /map-canvas -->
+      </section><!-- /get-in-touch -->
 
        
       <?php endwhile; // end of the loop. ?>
