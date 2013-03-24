@@ -31,8 +31,8 @@
                                 if(!isset($hasError)) {
                                   $emailTo = $data['email_address_contact'];
                                   $personalSubject = $data['email_subject'];
-                                  $subject = .$name. ' : ' .$emotional_state;
-                                  $body = "Name: $name \n\nEmotional State: $emotional_state\n\nEmail: $email \n\nMessage: $your_message";
+                                  $subject = 'From '.$name. ' : ' .$emotional_state;
+                                  $body = "Name: $name \n\n Emotional State: $emotional_state \n\nEmail: $email \n\nMessage: $your_message";
                                   $headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
                                   wp_mail($emailTo, $subject, $body, $headers);
