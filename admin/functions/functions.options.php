@@ -185,6 +185,13 @@ $of_options[] = array( 	"name" 		=> "Theme  ",
 						"type" 		=> "select",
 						"options" 	=> $alt_stylesheets
 				);
+$of_options[] = array( 	"name" 		=> "Email Address",
+						"desc" 		=> "Enter the email address you'd like to receive from the contact form",
+						"id" 		=> "email_address_contact",
+						"std" 		=> "rachman.blake@cmshero.es",
+						"icon" 		=> true,
+						"type" 		=> "text"
+				);
 $of_options[] = array( 	"name" 		=> "Email Subject",
 						"desc" 		=> "Enter your email subject",
 						"id" 		=> "email_subject",

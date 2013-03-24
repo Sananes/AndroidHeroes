@@ -29,7 +29,7 @@
                                 }
 
                                 if(!isset($hasError)) {
-                                  $emailTo = $data['email_address'];
+                                  $emailTo = $data['email_address_contact'];
                                   $subject = 'From '.$name. ' : ' .$emotional_state;
                                   $body = "Name: $name \n\nEmail: $email \n\nComments: $your_message";
                                   $headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
