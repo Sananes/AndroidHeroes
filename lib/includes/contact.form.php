@@ -22,16 +22,17 @@
                                   $hasError = true;
                                 } else {
                                   if(function_exists('stripslashes')) {
-                                    $comments = stripslashes(trim($_POST['your_message']));
+                                    $your_message = stripslashes(trim($_POST['your_message']));
                                   } else {
-                                    $comments = trim($_POST['your_message']);
+                                    $your_message = trim($_POST['your_message']);
                                   }
                                 }
 
                                 if(!isset($hasError)) {
                                   $emailTo = $data['email_address_contact'];
-                                  $subject = 'From '.$name. ' : ' .$emotional_state;
-                                  $body = "Name: $name \n\nEmail: $email \n\nComments: $your_message";
+                                  $personalSubject = $data['email_subject'];
+                                  $subject = $personalSubject . ': From '.$name. ' : ' .$emotional_state;
+                                  $body = "Name: $name \n\Emotional State: $emotional_state\n\nEmail: $email \n\Message: $your_message";
                                   $headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
                                   wp_mail($emailTo, $subject, $body, $headers);
