@@ -67,11 +67,8 @@ $('html, body').stop().animate({
 */
 e.preventDefault();
 });
-$('#map_canvas').gmap({'center': '37.771054,-122.419453', 'zoom': 14, 'disableDefaultUI':true, 'callback': function() {
-var self = this;
-self.addMarker({'position': this.get('map').getCenter() }).click(function() {
-self.openInfoWindow({ 'content': 'Hello World!' }, this);
-});
+$('#map_canvas').gmap({'center': '37.771054,-122.419453', 'zoom': 14, 'disableDefaultUI':true, 'scrollwheel':false, 'callback': function() {
+
 }});
 
 
