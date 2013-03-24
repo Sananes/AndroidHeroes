@@ -185,6 +185,11 @@ $of_options[] = array( 	"name" 		=> "Theme  ",
 						"type" 		=> "select",
 						"options" 	=> $alt_stylesheets
 				);
+
+$of_options[] = array( 	"name" 		=> "Contact Form",
+						"type" 		=> "heading"
+				);
+				
 $of_options[] = array( 	"name" 		=> "Email Address",
 						"desc" 		=> "Enter the email address you'd like to receive from the contact form",
 						"id" 		=> "email_address_contact",
