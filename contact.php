@@ -39,8 +39,9 @@ if(isset($_POST['submitted'])) {
 		if (!isset($emailTo) || ($emailTo == '') ){
 			$emailTo = get_option('admin_email');
 		}
-		$subject = '[PHP Snippets] From '.$name;
-		$body = "Name: $name \n\nEmail: $email \n\nComments: $comments";
+		$email_subject = $data['email_subject'];
+		$subject = . $email_subject . ': '.$name;
+		$body = "Name: $name \n\nSubject: $email_subject \n\nEmail: $email \n\nComments: $comments";
 		$headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
 		wp_mail($emailTo, $subject, $body, $headers);
