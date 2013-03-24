@@ -185,6 +185,13 @@ $of_options[] = array( 	"name" 		=> "Theme  ",
 						"type" 		=> "select",
 						"options" 	=> $alt_stylesheets
 				);
+$of_options[] = array( 	"name" 		=> "Email Subject",
+						"desc" 		=> "Enter your email subject",
+						"id" 		=> "email_subject",
+						"std" 		=> "CMSHero Contact Form",
+						"icon" 		=> true,
+						"type" 		=> "text"
+				);
 /* $of_options[] = array( 	"name" 		=> "Media Uploader",
 						"desc" 		=> "Upload images using the native media uploader, or define the URL directly",
 						"id" 		=> "media_upload",
