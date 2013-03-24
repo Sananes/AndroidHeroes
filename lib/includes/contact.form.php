@@ -29,10 +29,7 @@
                                 }
 
                                 if(!isset($hasError)) {
-                                  $emailTo = get_option('tz_email');
-                                  if (!isset($emailTo) || ($emailTo == '') ){
-                                    $emailTo = get_option('admin_email');
-                                  }
+                                  $emailTo = $data['email_address'];
                                   $subject = 'From '.$name. ' : ' .$emotional_state;
                                   $body = "Name: $name \n\nEmail: $email \n\nComments: $your_message";
                                   $headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
