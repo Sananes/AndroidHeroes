@@ -33,7 +33,7 @@
                                   if (!isset($emailTo) || ($emailTo == '') ){
                                     $emailTo = get_option('admin_email');
                                   }
-                                  $subject = '[PHP Snippets] From '.$name. ' : ' .$emotional_state;
+                                  $subject = 'From '.$name. ' : ' .$emotional_state;
                                   $body = "Name: $name \n\nEmail: $email \n\nComments: $your_message";
                                   $headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
@@ -51,7 +51,7 @@
 
                              <?php } ?>
                               <form action="<?php the_permalink(); ?>#about" id="contact_me" method="post">
-                               <input type="hidden" name="sent" id="sent" value="1" />
+
                                <div id="form" class="row-fluid">
                                 <div class="input-prepend span6">
                                <label>Your Name <span class="required">*</span></label>
