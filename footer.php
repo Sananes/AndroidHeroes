@@ -16,7 +16,7 @@
       	  <?php while ( have_posts() ) : the_post(); ?>
        <div class="social inline"><?php the_field('social_media'); ?></div>
        	<?php endwhile; ?>
-      <p class="inline">&copy; <?php echo $data['copyright']; ?> 2013. All rights reserved. Designed &amp; maintained by <a href="http://www.sananes.co">Aaron Sananes</a>. </p>
+      <p class="inline">&copy; <?php echo $data['copyright']; ?> 2013. <!-- All rights reserved. Designed &amp; maintained by <a href="http://www.sananes.co">Aaron Sananes</a>. --></p>
      </div> <!-- /container -->
     </footer> <!-- /footer -->
   </div> <!-- /wrapper -->
