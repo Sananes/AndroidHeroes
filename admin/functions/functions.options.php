@@ -143,9 +143,6 @@ $of_options[] = array( 	"name" 		=> "Tax Information",
 						"desc" 		=> "Enter your company tax information",
 						"id" 		=> "tax",
 						"std" 		=> "
-																	Evisua LTD<br />
-																	Vat number: GB987472263<br /> 
-																	Company Number: 05997321
                  ",
 						"icon" 		=> true,
 						"type" 		=> "textarea"

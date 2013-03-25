@@ -56,15 +56,15 @@ if(last_testimonial.height() === 0) { last_testimonial.remove(); }
 $('.get-in-touch, .back-top').bind('click',function(e){
 var $anchor = $(this);
 
-$('html, body').stop().animate({
+/*$('html, body').stop().animate({
     scrollTop: $($anchor.attr('href')).offset().top
 }, 1000,'easeInOutExpo');
-/*
-if you don't want to use the easing effects:
+*/
+
 $('html, body').stop().animate({
     scrollTop: $($anchor.attr('href')).offset().top
 }, 1000);
-*/
+
 e.preventDefault();
 });
 $('#map_canvas').gmap({'center': '37.771054,-122.419453', 'zoom': 14, 'disableDefaultUI':true, 'scrollwheel':false, 'callback': function() {

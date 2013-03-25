@@ -71,6 +71,24 @@ ul, li {
     width: 140px;
     height:47px;
     margin-top:80px;
+    a {
+      display:block;
+    }   
+    &.magento {
+      .at2x('assets/images/logo-magento.png', 100%,100%);      
+    }
+    &.joomla {
+      .at2x('assets/images/logo-joomla.png', 100%,100%);      
+    } 
+    &.android {
+      .at2x('assets/images/logo-android.png', 100%,100%);      
+    } 
+    &.drupal {
+      .at2x('assets/images/logo-ui.png', 100%,100%);      
+    } 
+    &.ui {
+      .at2x('assets/images/logo-drupal.png', 100%,100%);      
+    } 
   }
   .intro {
 
@@ -100,6 +118,13 @@ ul, li {
     bottom: 0;
     right:-40px;
   }
+  .browser-slider {
+    position:absolute;
+    right:0;
+    bottom:0;
+    display:block;
+    text-align:right;
+  }
 }
 .center-text {
   text-align:center;
@@ -119,12 +144,13 @@ ul, li {
   &.align-left {
     .feat-image-work {
       float:left;
+      left: -40px;
     }
   }
 
   .inner-container {
     padding: 70px 0 40px 0;
-  }
+  }©
   &.secondary {
      #gradient > .vertical(#f5f5f5,#f2f2f2); 
   }
@@ -133,13 +159,18 @@ ul, li {
     color: @green;
   }
   .details {
-    margin-left:100px;
+    margin-left:0px;
   }
   .feat-image-work {
     width: auto;
     float:right;
     position:relative;
+
+    &.browser {
+      right:-40px;
+    }
   }
+
   .align-left {
     float: left;
   }
@@ -344,16 +375,20 @@ ul, li {
 
 .featured-carousel {
     position:absolute;
-    top: 11.532385466035%; /* 70px / 633 */
-    left:6.462585034014%; /* 19px / 294 */
-    width:86.39455782312925%; /* 254 / 294 */;
-    height: 68.56240126382307%; /* 434 / 633 */;
+    top: 10.731707317073%; /* 44px / 410 */
+    left:0.72202166065%; /* 4px / 554 */
+    width:98.5559566787%; /* 546 / 554 */;
+    height: 88.292682926829%; /* 362 / 410 */;
     margin-bottom:0px;
     overflow:hidden;
 }
 .carousel-fade {
     .item {
       .transition(opacity 1s ease-in-out);
+    }
+    img {
+      width: 100%;
+      height:100%;
     }
     .active.left {
       left:0;
@@ -408,6 +443,27 @@ ul, li {
   text-indent: -999em;
   margin: 0 auto;
   display:inline-block;
+}
+
+
+.single-android {
+  .feat-image-work {
+    left: inherit !important;
+  }
+  .featured-carousel {
+    top: 11.532385466035%; /* 70px / 633 */
+    left:6.462585034014%; /* 19px / 294 */
+    width:86.39455782312925%; /* 254 / 294 */;
+    height: 68.56240126382307%; /* 434 / 633 */;
+  }
+  .details {
+    margin-left:100px !important;
+  }
+  .align-right {
+    .details {
+      margin-left: 0px !important;
+    }
+  }
 }
 /* Import Responsive css */
 @import "responsive.less";

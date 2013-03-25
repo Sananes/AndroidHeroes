@@ -15,7 +15,16 @@
 		width:auto;
 	}
 	.feat-image-work {
-		width:30% !important;
+		width:50% !important;
+		right:inherit !important;
+		left: inherit !important;
+	}
+	.featured-work {
+			.align-left {
+					.feat-image-work {
+							left: inherit !important;
+					}
+			}
 	}
 	.main-top .inner-container {
 		min-height: 400px;
@@ -30,6 +39,26 @@
 			}
 		 }
 	}
+	  .single-android {
+    .feat-image-work {
+      float:left;
+      left: inherit !important;
+      width:30% !important;
+    }
+   	.align-right {
+   		.feat-image-work {
+   			float: right;
+   		}
+   		.details {
+    		margin-left: 60px !important;  			
+   		}
+
+   	}
+    .details {
+    	  margin-left: 60px !important;
+    }
+
+  }
   // Fixed grid
   #grid > .core(@gridColumnWidth768, @gridGutterWidth768);
 

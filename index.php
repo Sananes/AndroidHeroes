@@ -18,7 +18,10 @@ get_header();
       <header class="main-top">
         <div class="container-fluid">
           <div class="inner-container">
-              <h1 class="logo">Android Heroes</h1>
+              <h1 class="logo <?php if('android' == get_post_type()) { echo 'android'; } elseif('magento' == get_post_type()) { echo 'magento'; } elseif('drupal' == get_post_type()) { echo 'drupal'; } elseif('joomla' == get_post_type()) { echo'joomla'; } else { echo ''; } ?>"><a href="<?php bloginfo('home'); ?>">
+                Android Heroes
+              </a>
+              </h1>
               <div class="clearfix"></div>
               <div class="row-fluid">
                 <div class="intro slide-intro span6">
@@ -26,10 +29,19 @@ get_header();
                   <p><?php the_field('intro_description'); ?></p>
                   <a href="#about" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
                 </div> <!-- /intro -->
+                <?php if('android' == get_post_type()) { ?>
                 <div class="android-slider hidden-phone span9 offset6">
                   <?php if(get_field('intro_image')) : ?><img src="<?php the_field('intro_image'); ?>" /><?php else: ?><img src="<?php theme_images(); ?>android-phone.png" /><?php endif; ?>
 
                 </div> <!-- /android-slider -->
+           
+                <?php } else { ?>            
+
+                <div class="browser-slider hidden-phone span6 offset6">
+                   <?php if(get_field('intro_image')) : ?><img src="<?php the_field('intro_image'); ?>" /><?php else: ?><img src="<?php theme_images(); ?>default-browser.png" /><?php endif; ?>
+
+                </div> <!-- /browser-slider -->
+                <?php } ?>
               </div> <!-- /row-fluid -->
           </div><!-- /inner-container -->
         </div><!-- /container-fluid -->
@@ -50,11 +62,12 @@ get_header();
               <div class="row-fluid inner-container ">
 
 
-
-              
-         
-                  <div class="feat-image-work" >
+                 <?php if('android' == get_post_type()) { // show normal browser slider ?>
+                   <div class="feat-image-work android " >
+                 
                   <img class="project-image" src="<?php theme_images(); ?>android-phone-<?php if($android == 'white') { echo 'white'; } else { echo 'black'; } ?>.png" />
+                   
+
                   <div id="featured-carousel" class="featured-carousel carousel slide carousel-fade">
                     
                     <div class="carousel-inner">
@@ -68,9 +81,29 @@ get_header();
                   </div> <!-- /carousel-inner -->
                   </div> <!-- /featured-carousel -->
                    </div>  <!-- /feat-image-work -->
-   
+                  <?php } else { // show android slider ?>
+                   <div class="feat-image-work browser " >
                  
-                <div class="span7 details"><h2><?php the_sub_field('project_title'); ?></h2>
+                  <img class="project-image" src="<?php theme_images(); ?>default-browser-project.png" />
+                   
+
+                  <div id="featured-carousel" class="featured-carousel carousel slide carousel-fade">
+                    
+                    <div class="carousel-inner">
+                  <?php while(has_sub_field('project_images')): ?> 
+                
+                  <!-- Carousel items -->      
+                  <div class="item">
+                    <img src="<?php the_sub_field('project_image'); ?>" />
+                  </div> <!-- /item -->
+                  <?php endwhile; ?>
+                  </div> <!-- /carousel-inner -->
+                  </div> <!-- /featured-carousel -->
+                   </div>  <!-- /feat-image-work -->
+
+                  <?php } ?>
+                 
+                <div class="<?php if('magento' == get_post_type()) { echo 'span5'; } else { echo 'span7';} ?> details"><h2><?php the_sub_field('project_title'); ?></h2>
                     <p class="lead"><?php the_sub_field('project_leader'); ?></p>
 
                     <?php the_sub_field('project_details'); //Project details here ?>
