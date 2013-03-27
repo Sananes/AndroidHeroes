@@ -18,7 +18,7 @@ get_header();
       <header class="main-top">
         <div class="container-fluid">
           <div class="inner-container">
-              <h1 class="logo <?php if('android' == get_post_type()) { echo 'android'; } elseif('magento' == get_post_type()) { echo 'magento'; } elseif('drupal' == get_post_type()) { echo 'drupal'; } elseif('joomla' == get_post_type()) { echo'joomla'; } else { echo ''; } ?>"><a href="<?php bloginfo('home'); ?>">
+              <h1 class="logo <?php if('android' == get_post_type()) { echo 'android'; } elseif('ux' == get_post_type()) { echo 'ui'; } elseif('magento' == get_post_type()) { echo 'magento'; } elseif('drupal' == get_post_type()) { echo 'drupal'; } elseif('joomla' == get_post_type()) { echo'joomla'; } else { echo ''; } ?>"><a href="<?php bloginfo('home'); ?>">
                 Android Heroes
               </a>
               </h1>
@@ -152,7 +152,7 @@ get_header();
               <div class="row-fluid inner-container">
                 <div class="span6">
                   <h2><?php the_title(); ?></h2>
-                  <p><?php the_content(); ?></p>
+                  <p><?php the_field('about_description'); ?></p>
                   <div class="social inline"><?php the_field('social_media'); ?></div>
                 </div> <!-- /span6 -->
 

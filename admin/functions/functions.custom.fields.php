@@ -32,13 +32,13 @@ add_filter('acf_settings', 'my_acf_settings');
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
-		'id' => '515064c5a5f2b',
+		'id' => '5152dc57c5e13',
 		'title' => 'Developer Settings',
 		'fields' => 
 		array (
 			0 => 
 			array (
-				'key' => 'field_59',
+				'key' => 'field_48',
 				'label' => 'Introduction Title',
 				'name' => 'intro_title',
 				'type' => 'text',
@@ -64,7 +64,7 @@ if(function_exists("register_field_group"))
 			),
 			1 => 
 			array (
-				'key' => 'field_60',
+				'key' => 'field_49',
 				'label' => 'Introduction Description',
 				'name' => 'intro_description',
 				'type' => 'textarea',
@@ -90,7 +90,7 @@ if(function_exists("register_field_group"))
 			),
 			2 => 
 			array (
-				'key' => 'field_61',
+				'key' => 'field_47',
 				'label' => 'Introduction Image',
 				'name' => 'intro_image',
 				'type' => 'image',
@@ -116,7 +116,7 @@ if(function_exists("register_field_group"))
 			),
 			3 => 
 			array (
-				'key' => 'field_65',
+				'key' => 'field_42',
 				'label' => 'Developer Projects',
 				'name' => 'projects',
 				'type' => 'repeater',
@@ -132,6 +132,7 @@ if(function_exists("register_field_group"))
 						array (
 							'field' => 'null',
 							'operator' => '==',
+							'value' => '',
 						),
 					),
 					'allorany' => 'all',
@@ -365,7 +366,7 @@ if(function_exists("register_field_group"))
 			),
 			4 => 
 			array (
-				'key' => 'field_62',
+				'key' => 'field_45',
 				'label' => 'Developer Portfolio',
 				'name' => 'portfolio_images',
 				'type' => 'repeater',
@@ -381,6 +382,7 @@ if(function_exists("register_field_group"))
 						array (
 							'field' => 'null',
 							'operator' => '==',
+							'value' => '',
 						),
 					),
 					'allorany' => 'all',
@@ -433,7 +435,7 @@ if(function_exists("register_field_group"))
 			),
 			5 => 
 			array (
-				'key' => 'field_58',
+				'key' => 'field_50',
 				'label' => 'Developer Testimonials',
 				'name' => 'testimonials',
 				'type' => 'repeater',
@@ -521,7 +523,7 @@ if(function_exists("register_field_group"))
 			),
 			6 => 
 			array (
-				'key' => 'field_63',
+				'key' => 'field_46',
 				'label' => 'About',
 				'name' => 'about_description',
 				'type' => 'wysiwyg',
@@ -549,7 +551,7 @@ if(function_exists("register_field_group"))
 			),
 			7 => 
 			array (
-				'key' => 'field_64',
+				'key' => 'field_44',
 				'label' => 'Developer Profile Image',
 				'name' => 'profile_image',
 				'type' => 'image',
@@ -575,7 +577,7 @@ if(function_exists("register_field_group"))
 			),
 			8 => 
 			array (
-				'key' => 'field_66',
+				'key' => 'field_43',
 				'label' => 'Developer Social Media',
 				'name' => 'social_media',
 				'type' => 'wysiwyg',
@@ -633,6 +635,20 @@ if(function_exists("register_field_group"))
 					'operator' => '==',
 					'value' => 'magento',
 					'order_no' => 3,
+				),
+				4 => 
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'wordpress',
+					'order_no' => 4,
+				),
+				5 => 
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'ux',
+					'order_no' => 5,
 				),
 			),
 			'allorany' => 'any',

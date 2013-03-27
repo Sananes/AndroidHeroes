@@ -6,7 +6,7 @@
 
 function magento_post_type() {
 	$labels = array(
-		'name'               => _x( 'Magento', 'post type general name' ),
+		'name'               => _x( 'Magento Developers', 'post type general name' ),
 		'singular_name'      => _x( 'Developer', 'post type singular name' ),
 		'add_new'            => _x( 'Add New', 'magento' ),
 		'add_new_item'       => __( 'Add New Magento Developer' ),
@@ -35,7 +35,7 @@ function magento_post_type() {
 
 function android_post_type() {
 	$labels = array(
-		'name'               => _x( 'Android', 'post type general name' ),
+		'name'               => _x( 'Android Developers', 'post type general name' ),
 		'singular_name'      => _x( 'Developer', 'post type singular name' ),
 		'add_new'            => _x( 'Add New', 'android' ),
 		'add_new_item'       => __( 'Add New Android Developer' ),
@@ -64,7 +64,7 @@ function android_post_type() {
 
 function drupal_post_type() {
 	$labels = array(
-		'name'               => _x( 'Drupal', 'post type general name' ),
+		'name'               => _x( 'Drupal Developers', 'post type general name' ),
 		'singular_name'      => _x( 'Developer', 'post type singular name' ),
 		'add_new'            => _x( 'Add New', 'drupal' ),
 		'add_new_item'       => __( 'Add New Drupal Developer' ),
@@ -93,7 +93,7 @@ function drupal_post_type() {
 
 function joomla_post_type() {
 	$labels = array(
-		'name'               => _x( 'Joomla', 'post type general name' ),
+		'name'               => _x( 'Joomla Developers', 'post type general name' ),
 		'singular_name'      => _x( 'Developer', 'post type singular name' ),
 		'add_new'            => _x( 'Add New', 'joomla' ),
 		'add_new_item'       => __( 'Add New Joomla Developer' ),
@@ -111,16 +111,74 @@ function joomla_post_type() {
 		'labels'        => $labels,
 		'description'   => 'Holds our developers specific data',
 		'public'        => true,
-		'menu_position' => 7,
+		'menu_position' => 8,
 		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
 		'has_archive'   => true,
 	);
 	register_post_type( 'joomla', $args );	
 }
 
+// WordPress Developers
+
+function wordpress_post_type() {
+	$labels = array(
+		'name'               => _x( 'WordPress Developers', 'post type general name' ),
+		'singular_name'      => _x( 'Developer', 'post type singular name' ),
+		'add_new'            => _x( 'Add New', 'wordpress' ),
+		'add_new_item'       => __( 'Add New WordPress Developer' ),
+		'edit_item'          => __( 'Edit Developer' ),
+		'new_item'           => __( 'New Developer' ),
+		'all_items'          => __( 'All Developers' ),
+		'view_item'          => __( 'View Developer' ),
+		'search_items'       => __( 'Search Products' ),
+		'not_found'          => __( 'No products found' ),
+		'not_found_in_trash' => __( 'No products found in the Trash' ), 
+		'parent_item_colon'  => '',
+		'menu_name'          => 'WordPress'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Holds our developers specific data',
+		'public'        => true,
+		'menu_position' => 9,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'wordpress', $args );	
+}
+// UX/UI Developers
+
+function uxui_post_type() {
+	$labels = array(
+		'name'               => _x( 'UI / UX Developers', 'post type general name' ),
+		'singular_name'      => _x( 'Developer', 'post type singular name' ),
+		'add_new'            => _x( 'Add New', 'ux' ),
+		'add_new_item'       => __( 'Add New UX/UI Developer' ),
+		'edit_item'          => __( 'Edit Developer' ),
+		'new_item'           => __( 'New Developer' ),
+		'all_items'          => __( 'All Developers' ),
+		'view_item'          => __( 'View Developer' ),
+		'search_items'       => __( 'Search Products' ),
+		'not_found'          => __( 'No products found' ),
+		'not_found_in_trash' => __( 'No products found in the Trash' ), 
+		'parent_item_colon'  => '',
+		'menu_name'          => 'UX / UI'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Holds our developers specific data',
+		'public'        => true,
+		'menu_position' => 10,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'ux', $args );	
+}
+
 add_action( 'init', 'joomla_post_type' );
 add_action( 'init', 'drupal_post_type' );
 add_action( 'init', 'android_post_type' );
 add_action( 'init', 'magento_post_type' );
-
+add_action( 'init', 'wordpress_post_type' );
+add_action( 'init', 'uxui_post_type' );
 ?>
