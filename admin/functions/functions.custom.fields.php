@@ -32,7 +32,7 @@ add_filter('acf_settings', 'my_acf_settings');
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
-		'id' => '5155c762609a9',
+		'id' => '5155cdd72c3b4',
 		'title' => 'Developer Settings',
 		'fields' => 
 		array (
