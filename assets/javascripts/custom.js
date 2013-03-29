@@ -27,7 +27,7 @@ $.fn.center = function() {
 });
 
 // Center company information
-$('.company-information').center();
+$('.company-information, .feat-image-work .details, .main-top .profie img').center();
 
 // Remove last testimonial, if empty
 
