@@ -24,22 +24,40 @@ get_header();
               </h1>
               <div class="clearfix"></div>
               <div class="row-fluid">
+
+                <?php if('android' == get_post_type()) { ?>
+
                 <div class="intro slide-intro span6">
                   <h2><?php the_field('intro_title'); ?></h2>
                   <p><?php the_field('intro_description'); ?></p>
                   <a href="#about" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
                 </div> <!-- /intro -->
-                <?php if('android' == get_post_type()) { ?>
-                <div class="android-slider hidden-phone span9 offset6">
+
+               <div class="android-slider hidden-phone span9 offset6">
                   <?php if(get_field('intro_image')) : ?><img src="<?php the_field('intro_image'); ?>" /><?php else: ?><img src="<?php theme_images(); ?>android-phone.png" /><?php endif; ?>
 
                 </div> <!-- /android-slider -->
            
-                <?php } else { ?>            
+                <?php } else { ?>      
 
-                <div class="browser-slider hidden-phone span6 offset6">
-                   <?php if(get_field('intro_image')) : ?><img src="<?php the_field('intro_image'); ?>" /><?php else: ?><img src="<?php theme_images(); ?>default-browser.png" /><?php endif; ?>
+                <div class="intro slide-intro span6">
+                  <h2><?php the_title(); ?></h2>
+                 
+                  <div class="tags">
+                     <?php while(has_sub_field('skillsets')): ?> 
+                    <span><?php the_sub_field('skillset'); ?></span>
+                     <?php endwhile; ?>
+                  </div>
+            
+                  <p><?php // the_field('intro_description'); ?>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                  <a href="#about" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
+                  <div class="mini-contact">
+                    <a href="mailto:info@cmshero.es">info@cmshero.es</a> <span class="phone">+1 098 998 001</span>
+                  </div>
+                </div> <!-- /intro -->
 
+                <div class="span6 profile">
+                  <img src="<?php the_field('profile_image'); ?>" width="350" height="350" class="profile-img" />
                 </div> <!-- /browser-slider -->
                 <?php } ?>
               </div> <!-- /row-fluid -->
@@ -154,11 +172,17 @@ get_header();
                   <h2><?php the_title(); ?></h2>
                   <p><?php the_field('about_description'); ?></p>
                   <div class="social inline"><?php the_field('social_media'); ?></div>
+                
+                  <div class="mini-contact">
+                    <a href="mailto:info@cmshero.es">info@cmshero.es</a> <span class="phone">+1 098 998 001</span>
+                  </div>
+                  
                 </div> <!-- /span6 -->
 
                  <div class="span6 profile">
                   <img src="<?php the_field('profile_image'); ?>" width="350" height="350" class="profile-img" />
                 </div>
+
                 <div class="row-fluid">
                   <div class="contact-form span12">
                     <div class="form-inner">

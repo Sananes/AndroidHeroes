@@ -2,26 +2,6 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8283",
   "files" : {
-    "\/assets\/images\/android-phone@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/android-phone@2x.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/assets\/images\/android-phone@2x.png",
-      "initialSize" : 1138304,
-      "fileType" : 8192
-    },
-    "\/_index.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_index.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/admin\/assets\/images\/colorpicker\/colorpicker_background.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -33,18 +13,36 @@
       "initialSize" : 1897,
       "fileType" : 8192
     },
-    "\/assets\/less\/hero-unit.less" : {
+    "\/assets\/images\/android-phone@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/android-phone@2x.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/assets\/images\/android-phone@2x.png",
+      "initialSize" : 1138304,
+      "fileType" : 8192
+    },
+    "\/admin\/assets\/images\/icon-info.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/admin\/assets\/images\/icon-info.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/admin\/assets\/images\/icon-info.png",
+      "initialSize" : 734,
+      "fileType" : 8192
+    },
+    "\/_index.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/less\/hero-unit.less",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/assets\/css\/hero-unit.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/_index.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/admin\/assets\/js\/smof.js" : {
       "ignoreWasSetByUser" : 0,
@@ -81,6 +79,19 @@
       "initialSize" : 1025,
       "fileType" : 8192
     },
+    "\/assets\/less\/hero-unit.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/less\/hero-unit.less",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/assets\/css\/hero-unit.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
     "\/admin\/assets\/images\/icon-paint.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -90,17 +101,6 @@
       "processed" : 1,
       "outputAbbreviatedPath" : "\/admin\/assets\/images\/icon-paint.png",
       "initialSize" : 805,
-      "fileType" : 8192
-    },
-    "\/admin\/assets\/images\/icon-info.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/admin\/assets\/images\/icon-info.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/admin\/assets\/images\/icon-info.png",
-      "initialSize" : 734,
       "fileType" : 8192
     },
     "\/assets\/images\/bg\/bg4.png" : {
@@ -180,17 +180,6 @@
       "initialSize" : 3533,
       "fileType" : 8192
     },
-    "\/assets\/javascripts\/custom.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/javascripts\/custom.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/javascripts\/custom-ck.js",
-      "fileType" : 64
-    },
     "\/assets\/less\/type.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -203,6 +192,17 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/assets\/javascripts\/custom.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/javascripts\/custom.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/javascripts\/custom-ck.js",
+      "fileType" : 64
     },
     "\/assets\/less\/dropdowns.less" : {
       "ignoreWasSetByUser" : 0,
@@ -301,19 +301,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/assets\/less\/modals.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/less\/modals.less",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/assets\/css\/modals.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
     "\/assets\/less\/responsive-767px-max.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -323,6 +310,19 @@
       "outputStyle" : 2,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/assets\/css\/responsive-767px-max.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
+    "\/assets\/less\/modals.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/less\/modals.less",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/assets\/css\/modals.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -820,14 +820,16 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/footer.php" : {
+    "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_r.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/footer.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_r.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_r.png",
+      "initialSize" : 1066,
+      "fileType" : 8192
     },
     "\/assets\/javascripts\/jquery.js" : {
       "ignoreWasSetByUser" : 0,
@@ -840,16 +842,14 @@
       "outputAbbreviatedPath" : "\/assets\/javascripts\/jquery-ck.js",
       "fileType" : 64
     },
-    "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_r.png" : {
+    "\/footer.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_r.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_r.png",
-      "initialSize" : 1066,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/footer.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/admin\/assets\/images\/ui-bg_flat_0_aaaaaa_40x100.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1162,19 +1162,6 @@
       "initialSize" : 535794,
       "fileType" : 8192
     },
-    "\/assets\/less\/retina.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/less\/retina.less",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/assets\/css\/retina.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
     "\/assets\/less\/bootstrap.less" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -1184,6 +1171,19 @@
       "outputStyle" : 2,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/assets\/css\/bootstrap.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
+    "\/assets\/less\/retina.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/less\/retina.less",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/assets\/css\/retina.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -1320,14 +1320,16 @@
       "initialSize" : 19404,
       "fileType" : 8192
     },
-    "\/admin\/functions\/functions.admin.php" : {
+    "\/admin\/assets\/js\/of-medialibrary-uploader.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/admin\/functions\/functions.admin.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/admin\/assets\/js\/of-medialibrary-uploader.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/admin\/assets\/js\/of-medialibrary-uploader-ck.js",
+      "fileType" : 64
     },
     "\/assets\/images\/bg\/bg10.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1340,6 +1342,15 @@
       "initialSize" : 2217,
       "fileType" : 8192
     },
+    "\/admin\/functions\/functions.admin.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/admin\/functions\/functions.admin.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/assets\/javascripts\/bootstrap-modal.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1349,17 +1360,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/javascripts\/bootstrap-modal-ck.js",
-      "fileType" : 64
-    },
-    "\/admin\/assets\/js\/of-medialibrary-uploader.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/admin\/assets\/js\/of-medialibrary-uploader.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/admin\/assets\/js\/of-medialibrary-uploader-ck.js",
       "fileType" : 64
     },
     "\/assets\/less\/component-animations.less" : {
@@ -1388,6 +1388,17 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/assets\/images\/contact-form-top-borders.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/contact-form-top-borders.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/assets\/images\/contact-form-top-borders.png",
+      "initialSize" : 2504,
+      "fileType" : 8192
+    },
     "\/admin\/assets\/images\/accept.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1397,17 +1408,6 @@
       "processed" : 1,
       "outputAbbreviatedPath" : "\/admin\/assets\/images\/accept.png",
       "initialSize" : 2915,
-      "fileType" : 8192
-    },
-    "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_g.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_g.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_g.png",
-      "initialSize" : 1069,
       "fileType" : 8192
     },
     "\/admin\/assets\/images\/icon_option.png" : {
@@ -1421,15 +1421,15 @@
       "initialSize" : 989,
       "fileType" : 8192
     },
-    "\/assets\/images\/contact-form-top-borders.png" : {
+    "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_g.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/contact-form-top-borders.png",
+      "inputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_g.png",
       "processed" : 1,
-      "outputAbbreviatedPath" : "\/assets\/images\/contact-form-top-borders.png",
-      "initialSize" : 2504,
+      "outputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_rgb_g.png",
+      "initialSize" : 1069,
       "fileType" : 8192
     },
     "\/assets\/less\/carousel.less" : {
@@ -1584,6 +1584,15 @@
       "outputAbbreviatedPath" : "\/assets\/javascripts\/custom-ck-ck.js",
       "fileType" : 64
     },
+    "\/default.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/default.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/admin\/assets\/images\/dropdown-arrow.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1615,23 +1624,12 @@
       "initialSize" : 37310,
       "fileType" : 8192
     },
-    "\/admin\/assets\/images\/colorpicker\/colorpicker_submit.png" : {
+    "\/admin\/layouts\/placebo.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_submit.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_submit.png",
-      "initialSize" : 984,
-      "fileType" : 8192
-    },
-    "\/default.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/default.css",
+      "inputAbbreviatedPath" : "\/admin\/layouts\/placebo.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
@@ -1646,14 +1644,16 @@
       "initialSize" : 1076,
       "fileType" : 8192
     },
-    "\/admin\/layouts\/placebo.css" : {
+    "\/admin\/assets\/images\/colorpicker\/colorpicker_submit.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/admin\/layouts\/placebo.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_submit.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/admin\/assets\/images\/colorpicker\/colorpicker_submit.png",
+      "initialSize" : 984,
+      "fileType" : 8192
     },
     "\/assets\/images\/android-phone-white@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1666,6 +1666,15 @@
       "initialSize" : 1035905,
       "fileType" : 8192
     },
+    "\/header.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/header.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/assets\/images\/portfolio3.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1676,15 +1685,6 @@
       "outputAbbreviatedPath" : "\/assets\/images\/portfolio3.png",
       "initialSize" : 107309,
       "fileType" : 8192
-    },
-    "\/header.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/header.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/admin\/assets\/images\/colorpicker\/colorpicker_overlay.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1820,6 +1820,17 @@
       "initialSize" : 2824,
       "fileType" : 8192
     },
+    "\/assets\/images\/android-phone-black@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/android-phone-black@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/images\/android-phone-black@2x.png",
+      "initialSize" : 0,
+      "fileType" : 8192
+    },
     "\/admin\/assets\/images\/icon-notice.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1831,15 +1842,15 @@
       "initialSize" : 664,
       "fileType" : 8192
     },
-    "\/assets\/images\/android-phone-black@2x.png" : {
+    "\/assets\/images\/bg\/bg8.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/android-phone-black@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/images\/android-phone-black@2x.png",
-      "initialSize" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/bg\/bg8.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/assets\/images\/bg\/bg8.png",
+      "initialSize" : 5425,
       "fileType" : 8192
     },
     "\/admin\/assets\/images\/colorpicker\/select.png" : {
@@ -1864,17 +1875,6 @@
       "initialSize" : 687,
       "fileType" : 8192
     },
-    "\/assets\/images\/bg\/bg8.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/bg\/bg8.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/assets\/images\/bg\/bg8.png",
-      "initialSize" : 5425,
-      "fileType" : 8192
-    },
     "\/assets\/images\/android-phone-black.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1897,6 +1897,17 @@
       "outputAbbreviatedPath" : "\/admin\/assets\/js\/colorpicker-ck.js",
       "fileType" : 64
     },
+    "\/assets\/images\/app-icon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/app-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/images\/app-icon.png",
+      "initialSize" : 1510974,
+      "fileType" : 8192
+    },
     "\/assets\/images\/bg\/bg1.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1908,27 +1919,14 @@
       "initialSize" : 117,
       "fileType" : 8192
     },
-    "\/assets\/javascripts\/bootstrap.min.js" : {
+    "\/lib\/includes\/jquery.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/javascripts\/bootstrap.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/javascripts\/bootstrap.min-ck.js",
-      "fileType" : 64
-    },
-    "\/admin\/assets\/images\/icon-backup.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/admin\/assets\/images\/icon-backup.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/admin\/assets\/images\/icon-backup.png",
-      "initialSize" : 613,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/lib\/includes\/jquery.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/assets\/images\/logo-ui.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1940,15 +1938,6 @@
       "outputAbbreviatedPath" : "\/assets\/images\/logo-ui.png",
       "initialSize" : 4903,
       "fileType" : 8192
-    },
-    "\/lib\/includes\/jquery.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/includes\/jquery.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/assets\/images\/logo-magento@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1985,6 +1974,39 @@
       "initialSize" : 3688,
       "fileType" : 8192
     },
+    "\/admin\/assets\/images\/icon-backup.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/admin\/assets\/images\/icon-backup.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/admin\/assets\/images\/icon-backup.png",
+      "initialSize" : 613,
+      "fileType" : 8192
+    },
+    "\/assets\/javascripts\/bootstrap.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/javascripts\/bootstrap.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/javascripts\/bootstrap.min-ck.js",
+      "fileType" : 64
+    },
+    "\/assets\/images\/bg\/bg11.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/bg\/bg11.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/assets\/images\/bg\/bg11.png",
+      "initialSize" : 43777,
+      "fileType" : 8192
+    },
     "\/assets\/less\/responsive-1200px-min.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1997,17 +2019,6 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/assets\/images\/bg\/bg11.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/bg\/bg11.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/assets\/images\/bg\/bg11.png",
-      "initialSize" : 43777,
-      "fileType" : 8192
     },
     "\/assets\/less\/responsive-768px-979px.less" : {
       "ignoreWasSetByUser" : 0,
@@ -2042,6 +2053,17 @@
       "processed" : 1,
       "outputAbbreviatedPath" : "\/admin\/assets\/images\/icon-edit.png",
       "initialSize" : 618,
+      "fileType" : 8192
+    },
+    "\/assets\/images\/contact-icons.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/contact-icons.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/images\/contact-icons.png",
+      "initialSize" : 1821,
       "fileType" : 8192
     },
     "\/admin\/assets\/images\/icon-docs.png" : {
@@ -2110,6 +2132,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/assets\/images\/bg\/bg6.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/bg\/bg6.jpg",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/assets\/images\/bg\/bg6.jpg",
+      "initialSize" : 12652,
+      "fileType" : 4096
+    },
     "\/assets\/less\/thumbnails.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2122,17 +2155,6 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/assets\/images\/bg\/bg6.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/bg\/bg6.jpg",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/assets\/images\/bg\/bg6.jpg",
-      "initialSize" : 12652,
-      "fileType" : 4096
     },
     "\/admin\/layouts\/default.css" : {
       "ignoreWasSetByUser" : 0,

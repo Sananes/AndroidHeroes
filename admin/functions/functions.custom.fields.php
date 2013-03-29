@@ -32,7 +32,7 @@ add_filter('acf_settings', 'my_acf_settings');
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
-		'id' => '5152dc57c5e13',
+		'id' => '5155c762609a9',
 		'title' => 'Developer Settings',
 		'fields' => 
 		array (
@@ -551,11 +551,60 @@ if(function_exists("register_field_group"))
 			),
 			7 => 
 			array (
+				'key' => 'field_51',
+				'label' => 'Skills',
+				'name' => 'skillsets',
+				'type' => 'repeater',
+				'order_no' => 7,
+				'instructions' => 'Add your skillset',
+				'required' => 0,
+				'conditional_logic' => 
+				array (
+					'status' => 0,
+					'rules' => 
+					array (
+						0 => 
+						array (
+							'field' => 'null',
+							'operator' => '==',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'sub_fields' => 
+				array (
+					0 => 
+					array (
+						'key' => 'field_53',
+						'label' => 'Skill',
+						'name' => 'skillset',
+						'type' => 'text',
+						'order_no' => 0,
+						'instructions' => 'Add a skill set',
+						'required' => 0,
+						'conditional_logic' => 
+						array (
+							'status' => 0,
+							'allorany' => 'all',
+							'rules' => 0,
+						),
+						'column_width' => 4,
+						'default_value' => '',
+						'formatting' => 'html',
+					),
+				),
+				'row_min' => 3,
+				'row_limit' => 10,
+				'layout' => 'table',
+				'button_label' => 'Add New Skill',
+			),
+			8 => 
+			array (
 				'key' => 'field_44',
 				'label' => 'Developer Profile Image',
 				'name' => 'profile_image',
 				'type' => 'image',
-				'order_no' => 7,
+				'order_no' => 8,
 				'instructions' => 'Upload developers profile image.',
 				'required' => 0,
 				'conditional_logic' => 
@@ -575,13 +624,13 @@ if(function_exists("register_field_group"))
 				'save_format' => 'url',
 				'preview_size' => 'thumbnail',
 			),
-			8 => 
+			9 => 
 			array (
 				'key' => 'field_43',
 				'label' => 'Developer Social Media',
 				'name' => 'social_media',
 				'type' => 'wysiwyg',
-				'order_no' => 8,
+				'order_no' => 9,
 				'instructions' => 'Developers social links.',
 				'required' => 1,
 				'conditional_logic' => 
@@ -677,4 +726,5 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 }
+
 ?>
