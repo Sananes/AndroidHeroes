@@ -22,7 +22,7 @@ get_header();
                 Android Heroes
               </a>
               </h1>
-              <?php if(the_field('sub_title')) { ?><p class="subleader"><?php the_sub_field('sub_title'); ?></p><?php } ?>
+              <?php if(get_field('sub_title')) : ?><p class="subleader"><?php the_field('sub_title'); ?></p><?php endif; ?>
               <div class="clearfix"></div>
               <div class="row-fluid">
 
