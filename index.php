@@ -22,7 +22,7 @@ get_header();
                 Android Heroes
               </a>
               </h1>
-              <?php if('magento' == get_post_type()) { echo '<p class="subleader">Network of the worlds best Magento developers</p>'; } ?></p>
+              <?php if(the_field('sub_title')) { ?><p class="subleader"><?php the_sub_field('sub_title'); ?></p><?php } ?>
               <div class="clearfix"></div>
               <div class="row-fluid">
 
@@ -42,7 +42,7 @@ get_header();
                 <?php } else { ?>      
 
                 <div class="intro slide-intro span6">
-                  <h2><?php the_title(); ?></h2>
+                  <h2><?php the_field('intro_title'); ?></h2>
                  
                   <div class="tags">
                      <?php while(has_sub_field('skillsets')): ?> 
@@ -50,7 +50,7 @@ get_header();
                      <?php endwhile; ?>
                   </div>
             
-                  <p><?php // the_field('intro_description'); ?>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+                  <p><?php the_field('intro_description'); ?> </p>
                   <a href="#about" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
                   <div class="mini-contact">
                     <a href="mailto:info@cmshero.es">info@cmshero.es</a> <span class="phone">+1 098 998 001</span>
