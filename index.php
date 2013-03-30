@@ -22,6 +22,7 @@ get_header();
                 Android Heroes
               </a>
               </h1>
+              <?php if('magento' == get_post_type()) { echo '<p class="subleader">Network of the worlds best Magento developers</p>'; } ?></p>
               <div class="clearfix"></div>
               <div class="row-fluid">
 
@@ -176,7 +177,7 @@ get_header();
                   <div class="mini-contact">
                     <a href="mailto:info@cmshero.es">info@cmshero.es</a> <span class="phone">+1 098 998 001</span>
                   </div>
-                  
+
                 </div> <!-- /span6 -->
 
                  <div class="span6 profile">
