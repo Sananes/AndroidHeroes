@@ -41,7 +41,7 @@ get_header();
            
                 <?php } else { ?>      
 
-                <div class="intro slide-intro span6">
+                <div class="intro slide-intro span7">
                   <h2><?php the_field('intro_title'); ?></h2>
                  
                   <div class="tags">
@@ -57,8 +57,9 @@ get_header();
                   </div>
                 </div> <!-- /intro -->
 
-                <div class="span6 profile">
+                <div class="span5 profile">
                   <img src="<?php the_field('profile_image'); ?>" width="350" height="350" class="profile-img" />
+                  <?php if(get_field('main_skill')) : ?><p><?php the_title(); ?> - <?php the_field('main_skill'); ?></p><?php else: ?><p><?php the_title(); ?> - Developer</p><?php endif; ?>
                 </div> <!-- /browser-slider -->
                 <?php } ?>
               </div> <!-- /row-fluid -->
