@@ -31,7 +31,7 @@ get_header();
                 <div class="intro slide-intro span6">
                   <h2><?php the_field('intro_title'); ?></h2>
                   <p><?php the_field('intro_description'); ?></p>
-                  <a href="#about" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
+                  <a href="#contact-form" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
                 </div> <!-- /intro -->
 
                <div class="android-slider hidden-phone span9 offset6">
@@ -185,7 +185,7 @@ get_header();
                   <img src="<?php the_field('profile_image'); ?>" width="350" height="350" class="profile-img" />
                 </div>
 
-                <div class="row-fluid">
+                <div class="row-fluid" id="contact-form">
                   <div class="contact-form span12">
                     <div class="form-inner">
                       <?php include(TEMPLATEPATH . '/lib/includes/contact.form.php'); ?>
