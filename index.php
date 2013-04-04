@@ -30,14 +30,14 @@ get_header();
 <div class="clearfix"></div>
 <section id="platforms">
  <div class="row-fluid">
-  <a href="<?php bloginfo('home'); ?>/magento/" class="platform-box span4">
+  <a href="<?php bloginfo('home'); ?>/magento/matt-ricks" class="platform-box span4">
    
       <img src="<?php theme_images(); ?>magento-heroes.png" />
       <h2>Magento Hereoes</h2>
 
 
 </a>
-  <a href="<?php bloginfo('home'); ?>/ux/" class="platform-box span4">
+  <a href="<?php bloginfo('home'); ?>/ux/aaron-sananes" class="platform-box span4">
 
       <img src="<?php theme_images(); ?>ux-heroes.png" />
       <h2>UX/UI Hereoes</h2>
@@ -53,7 +53,7 @@ get_header();
 </a>
 </div> <!-- /row-fluid -->
 <div class="row-fluid">
-  <a href="<?php bloginfo('home'); ?>/ux/" class="platform-box span4">
+  <a href="<?php bloginfo('home'); ?>/ux/aaron-sananes" class="platform-box span4">
 
       <img src="<?php theme_images(); ?>drupal-heroes.png" />
       <h2>Drupal Hereoes</h2>
@@ -67,7 +67,7 @@ get_header();
 
   
 </a>
-  <a href="<?php bloginfo('home'); ?>/android/" class="platform-box span4">
+  <a href="<?php bloginfo('home'); ?>/android/dustin-dettmer" class="platform-box span4">
 
       <img src="<?php theme_images(); ?>android-heroes.png" />
       <h2>Android Hereoes</h2>
