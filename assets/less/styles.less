@@ -53,7 +53,7 @@ ul, li {
     background:#dcdcdc;
     .box-shadow(none);
     width: auto;
-    .border-radius(none);
+    .border-radius(0px);
   }
 
   .container {
@@ -85,7 +85,7 @@ ul, li {
     }
   }
   .mini-contact {
-
+    float:right;
   }
   #platforms {
       padding: 30px 0;
@@ -559,10 +559,9 @@ ul, li {
 .carousel-fade {
     .item {
       .transition(opacity 1s ease-in-out);
+        height: 88.292682926829%; /* 362 / 410 */;
     }
     img {
-      width: 100%;
-      height:100%;
     }
     .active.left {
       left:0;
@@ -638,7 +637,7 @@ ul, li {
   }
   .featured-carousel {
     top: 11.532385466035%; /* 70px / 633 */
-    left:6.462585034014%; /* 19px / 294 */
+    left: 6.462585034014%; /* 19px / 294 */
     width:86.39455782312925%; /* 254 / 294 */;
     height: 68.56240126382307%; /* 434 / 633 */;
   }

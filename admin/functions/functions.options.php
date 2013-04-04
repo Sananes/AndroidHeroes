@@ -124,11 +124,18 @@ $of_options[] = array( 	"name" 		=> "Company Address",
 																		United States",
 						"icon" 		=> true,
 						"type" 		=> "textarea"
+				);
+$of_options[] = array( 	"name" 		=> "Slogan",
+						"desc" 		=> "Company Slogan",
+						"id" 		=> "slogan",
+						"std" 		=> "The network of proven developers",
+						"icon" 		=> true,
+						"type" 		=> "textarea"
 				);	
 $of_options[] = array( 	"name" 		=> "Phone Number",
 						"desc" 		=> "Enter your company phone number",
 						"id" 		=> "phone_number",
-						"std" 		=> "+ 1 (0) 112 3112 221",
+						"std" 		=> "+1 (888) 408-7761",
 						"icon" 		=> true,
 						"type" 		=> "text"
 				);	

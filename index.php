@@ -18,12 +18,14 @@ get_header();
 <h1 class="logo">
   <a href="<?php bloginfo('home'); ?>">CmSHeroes</a>
 </h1>
+<?php if($data['slogan']) { ?>
 <span class="slogan">
-  The network of proven developers
+  <?php echo $data['slogan']; ?>
   </span>
-   <div class="mini-contact offset5">
-                    <a href="mailto:info@cmshero.es">info@cmshero.es</a> <span class="phone">+1 09 08 8123</span>
-                  </div>
+<?php } ?>
+   <div class="mini-contact">
+      <?php if($data['email_address']) { ?><a href="mailto:<?php echo $data['email_address']; ?>"><?php echo $data['email_address']; ?></a><?php } ?> <?php if($data['phone_number']) { ?><span class="phone"><?php echo $data['phone_number']; ?></span><?php } ?>
+       </div>
 </header>
 <div class="clearfix"></div>
 <section id="platforms">
