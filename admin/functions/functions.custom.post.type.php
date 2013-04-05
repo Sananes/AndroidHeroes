@@ -175,10 +175,40 @@ function uxui_post_type() {
 	register_post_type( 'ux', $args );	
 }
 
+// Frontend Developers
+
+function frontend_post_type() {
+	$labels = array(
+		'name'               => _x( 'Frontend Developers', 'post type general name' ),
+		'singular_name'      => _x( 'Developer', 'post type singular name' ),
+		'add_new'            => _x( 'Add New', 'frontend' ),
+		'add_new_item'       => __( 'Add New Frontend Developer' ),
+		'edit_item'          => __( 'Edit Developer' ),
+		'new_item'           => __( 'New Developer' ),
+		'all_items'          => __( 'All Developers' ),
+		'view_item'          => __( 'View Developer' ),
+		'search_items'       => __( 'Search Products' ),
+		'not_found'          => __( 'No products found' ),
+		'not_found_in_trash' => __( 'No products found in the Trash' ), 
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Front-end'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Holds our developers specific data',
+		'public'        => true,
+		'menu_position' => 10,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+		'has_archive'   => true,
+	);
+	register_post_type( 'frontend', $args );	
+}
+
 add_action( 'init', 'joomla_post_type' );
 add_action( 'init', 'drupal_post_type' );
 add_action( 'init', 'android_post_type' );
 add_action( 'init', 'magento_post_type' );
+add_action( 'init', 'frontend_post_type' );
 add_action( 'init', 'wordpress_post_type' );
 add_action( 'init', 'uxui_post_type' );
 ?>
