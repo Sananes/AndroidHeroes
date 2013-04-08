@@ -197,7 +197,7 @@ function frontend_post_type() {
 		'labels'        => $labels,
 		'description'   => 'Holds our developers specific data',
 		'public'        => true,
-		'menu_position' => 10,
+		'menu_position' => 11,
 		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
 		'has_archive'   => true,
 	);

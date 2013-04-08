@@ -67,7 +67,7 @@ get_header();
 
   
 </a>
-  <a href="<?php bloginfo('home'); ?>/android/dustin-dettmer" class="platform-box span4">
+  <a href="<?php bloginfo('home'); ?>/android/" class="platform-box span4">
 
       <img src="<?php theme_images(); ?>android-heroes.png" />
       <h2>Android Hereoes</h2>
