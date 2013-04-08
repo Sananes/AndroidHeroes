@@ -123,7 +123,7 @@ get_header();
 
                   <?php } ?>
                  
-                <div class="<?php if('magento' == get_post_type()) { echo 'span5'; } else { echo 'span7';} ?> details"><h2><?php the_sub_field('project_title'); ?></h2>
+                <div class="<?php if('android' == get_post_type()) { echo 'span7'; } else { echo 'span5';} ?> details"><h2><?php the_sub_field('project_title'); ?></h2>
                     <p class="lead"><?php the_sub_field('project_leader'); ?></p>
 
                     <?php the_sub_field('project_details'); //Project details here ?>
