@@ -53,7 +53,7 @@ get_header();
 </a>
 </div> <!-- /row-fluid -->
 <div class="row-fluid">
-  <a href="<?php bloginfo('home'); ?>/ux/aaron-sananes" class="platform-box span4">
+  <a href="<?php bloginfo('home'); ?>/drupal" class="platform-box span4">
 
       <img src="<?php theme_images(); ?>drupal-heroes.png" />
       <h2>Drupal Hereoes</h2>
