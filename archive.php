@@ -18,7 +18,7 @@ get_header();
       <header class="main-top">
         <div class="container-fluid">
           <div class="inner-container">
-              <h1 class="logo <?php if('android' == get_post_type()) { echo 'android'; } elseif('ux' == get_post_type()) { echo 'ui'; } elseif('magento' == get_post_type()) { echo 'magento'; } elseif('drupal' == get_post_type()) { echo 'drupal'; } elseif('joomla' == get_post_type()) { echo'joomla'; } else { echo ''; } ?>"><a href="<?php bloginfo('home'); ?>">
+              <h1 class="logo <?php if('android' == get_post_type()) { echo 'android'; } elseif('ux' == get_post_type()) { echo 'ui'; } elseif('magento' == get_post_type()) { echo 'magento'; } elseif('drupal' == get_post_type()) { echo 'drupal'; } elseif('frontend' == get_post_type()) { echo'frontend'; } elseif('joomla' == get_post_type()) { echo'joomla'; } elseif('wordpress' == get_post_type()) { echo'wordpress'; } else { echo ''; } ?>"><a href="<?php bloginfo('home'); ?>">
                 Android Heroes
               </a>
               </h1>
@@ -31,7 +31,7 @@ get_header();
                 <div class="intro slide-intro span6">
                   <h2><?php the_field('intro_title'); ?></h2>
                   <p><?php the_field('intro_description'); ?></p>
-                  <a href="#about" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
+                  <a href="#contact-form" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
                 </div> <!-- /intro -->
 
                <div class="android-slider hidden-phone span9 offset6">
@@ -185,7 +185,7 @@ get_header();
                   <img src="<?php the_field('profile_image'); ?>" width="350" height="350" class="profile-img" />
                 </div>
 
-                <div class="row-fluid">
+                <div class="row-fluid" id="contact-form">
                   <div class="contact-form span12">
                     <div class="form-inner">
                       <?php include(TEMPLATEPATH . '/lib/includes/contact.form.php'); ?>
