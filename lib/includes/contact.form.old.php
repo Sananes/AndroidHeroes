@@ -1,10 +1,3 @@
-<div id="contactForm" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
- <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Talk to us</h3>
-  </div>
-
-      <div class="modal-body">
                               <?php
                               if(isset($_POST['submitted'])) {
                                 if(trim($_POST['contactName']) === '') {
@@ -56,10 +49,10 @@
                                         <p class="error">Sorry, an error occured.<p>
 
                              <?php } ?>
-                              <form action="<?php the_permalink(); ?>/thank-you" id="contact_me" method="post">
+                              <form action="<?php the_permalink(); ?>#about" id="contact_me" method="post">
 
                                <div id="form" class="row-fluid">
-                                <div class="field">
+                                <div class="input-prepend span6">
                                <label>Your Name <span class="required">*</span></label>
                                <div id="input-field">
                                 <input type="text" name="contactName" id="contactName" value="<?php echo $_POST['contactName'];?>" />
@@ -68,7 +61,7 @@
                                  <span><?=$nameError;?></span>
                                <?php } ?>
                               </div><!-- / Full name -->
-                               <div class="field">
+                               <div class="input-append span6">
                                 <label>Your Email <span class="required">*</span></label>
 
                                <div id="input-field">
@@ -78,13 +71,13 @@
                                  <span><?=$emailError;?></span>
                                <?php } ?>
                                </div> <!-- / Email Address -->
-                                <div class="field">
+                                <div class="input-prepend span6">
                                 <label>Phone</label>
                                <div id="input-field">
                                 <input type="text" name="phone_number" id="phone_number" value="<?php echo $_POST['phone_number'];?>" />
                                </div>
                                </div> <!-- /Phone number -->
-                               <div class="field">
+                               <div class="input-append span6">
                                 <label>Your emotional state</label>
                                <div id="input-field">
                                 <select name="emotional_state" value="<?php echo $_POST['emotional_state'];?>">
@@ -98,19 +91,15 @@
                                 </select>
                                </div>
                               </div>
-                              <div class="textarea-field">
+                              <div class="span12 textarea-field">
                                <label>Your Message <span class="required">*</span></label>
                                <div id="input-field"><textarea name="your_message" id="your_message"></textarea></div>
                                </div>
                                <label> </label>
                                <div id="input-field"><button type="submit" name="submit" class="btn btn-success btn-large"><?php echo $data['email_button']; ?></button></div>
                               <input type="hidden" name="submitted" id="submitted" value="true" />
-                                     </div>   
+                                      
                               </form>
 
                            
                         
-                          
-  </div>
-
-</div>

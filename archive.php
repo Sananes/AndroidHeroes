@@ -31,7 +31,7 @@ get_header();
                 <div class="intro slide-intro span6">
                   <h2><?php the_field('intro_title'); ?></h2>
                   <p><?php the_field('intro_description'); ?></p>
-                  <a href="#contact-form" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
+                  <a href="#contactForm" data-toggle="modal" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
                 </div> <!-- /intro -->
 
                <div class="android-slider hidden-phone span9 offset6">
@@ -51,7 +51,7 @@ get_header();
                   </div>
             
                   <p><?php the_field('intro_description'); ?> </p>
-                  <a href="#about" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
+                  <a href="#contactForm" data-toggle="modal" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
                   <div class="mini-contact">
                     <a href="mailto:info@cmshero.es"><?php the_field('email_address'); ?></a> <span class="phone"><?php the_field('phone_number'); ?></span>
                   </div>
@@ -135,7 +135,8 @@ get_header();
                       <?php endwhile; ?>
                     </ul> <!-- / list-item -->
                     <?php endif; ?>
-                    <a class="btn btn-large btn-secondary" href="<?php the_sub_field('project_button_link'); ?>"><?php the_sub_field('project_button_text'); ?></a>
+                    <!-- <a class="btn btn-large btn-secondary" href="<?php the_sub_field('project_button_link'); ?>"><?php the_sub_field('project_button_text'); ?></a> -->
+                    <a class="btn btn-large btn-secondary" data-toggle="modal" href="#contactForm">Get in touch</a>
                 </div><!-- /span6 -->
           
               </div> <!-- /row-fluid -->
@@ -185,13 +186,13 @@ get_header();
                   <img src="<?php the_field('profile_image'); ?>" width="350" height="350" class="profile-img" />
                 </div>
 
-                <div class="row-fluid" id="contact-form">
+               <!--  <div class="row-fluid" id="contact-form">
                   <div class="contact-form span12">
                     <div class="form-inner">
-                      <?php include(TEMPLATEPATH . '/lib/includes/contact.form.php'); ?>
-                      </div> <!-- /form-inner -->
+                      <?php //include(TEMPLATEPATH . '/lib/includes/contact.form.php'); ?>
+                      </div>
             
-                    </div> <!-- /get-in-touch -->
+                    </div>get-in-touch -->
                 </div>
              
               </div> <!-- /row-fluid -->
@@ -285,7 +286,7 @@ get_header();
          
            <div id="map_canvas" class="map">     </div> <!-- /map-canvas -->
       </section><!-- /get-in-touch -->
-
+      <?php include(TEMPLATEPATH . '/lib/includes/contact.form.php'); ?>
        
       <?php endwhile; // end of the loop. ?>
 
