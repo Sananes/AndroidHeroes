@@ -95,7 +95,7 @@ get_header();
                 
                   <!-- Carousel items -->      
                   <div class="item">
-                    <img src="<?php the_sub_field('project_image'); ?>" />
+                    <img src="<?php bloginfo('template_directory');?>/timthumb.php?src=<?php the_sub_field('project_image'); ?>&q=85" />
                   </div> <!-- /item -->
                   <?php endwhile; ?>
                   </div> <!-- /carousel-inner -->
