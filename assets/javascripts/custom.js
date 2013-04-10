@@ -17,9 +17,9 @@ $.fn.center = function() {
     return this;
 };
 
-		var carousel = $('.carousel'),
-						slideIntro = $('.slide-intro'),
-						slideImage = $('.android-slider');
+		var carousel = $('.carousel');
+						//slideIntro = $('.slide-intro'),
+						//slideImage = $('.android-slider');
 		carousel.find('img:first').parent().addClass('active');
 		carousel.find('.item:first').addClass('active');
 		carousel.carousel({
@@ -34,15 +34,15 @@ $('.company-information, .feat-image-work .details, .main-top .profie img').cent
 var last_testimonial = $('.testimonials-carousel').find('.item:last-child');
 if(last_testimonial.height() === 0) { last_testimonial.remove(); }
 
-// If slide homepage intro is active
 
-		if(slideIntro){
+
+/*	if(slideIntro){
 			$(slideIntro).css({ marginLeft: 20, opacity:0 });
 		slideIntro.animate({
     opacity: 1,
     marginLeft: 0
   }, 500, function() {
-    // Animation complete.
+
   });
 	}
   slideImage.css({ marginRight: 30, opacity:0});
@@ -51,7 +51,7 @@ if(last_testimonial.height() === 0) { last_testimonial.remove(); }
 		marginRight:0
   }, 500, function() {
 
-  });
+  }); */
 
 $('.get-in-touch, .back-top').bind('click',function(e){
 var $anchor = $(this);
