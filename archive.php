@@ -175,26 +175,18 @@ get_header();
                   <h2><?php the_title(); ?></h2>
                   <p><?php the_field('about_description'); ?></p>
                   <div class="social inline"><?php the_field('social_media'); ?></div>
-                
+                <a href="#contactForm" data-toggle="modal" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
                   <div class="mini-contact">
-                    <a href="mailto:info@cmshero.es">info@cmshero.es</a> <span class="phone">+1 098 998 001</span>
+                    <a href="mailto:info@cmshero.es">info@cmshero.es</a> <span class="phone"><?php the_field('phone_number'); ?></span>
                   </div>
-
+                    
                 </div> <!-- /span6 -->
 
                  <div class="span6 profile">
                   <img src="<?php the_field('profile_image'); ?>" width="350" height="350" class="profile-img" />
+                
                 </div>
 
-               <!--  <div class="row-fluid" id="contact-form">
-                  <div class="contact-form span12">
-                    <div class="form-inner">
-                      <?php //include(TEMPLATEPATH . '/lib/includes/contact.form.php'); ?>
-                      </div>
-            
-                    </div>get-in-touch -->
-                </div>
-             
               </div> <!-- /row-fluid -->
         </div> <!-- /container-fluid -->
       </section><!-- /about-me -->

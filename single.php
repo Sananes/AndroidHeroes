@@ -187,15 +187,6 @@ get_header();
                 
                 </div>
 
-               <!-- /  <div class="row-fluid" id="contact-form">
-                  <div class="contact-form span12">
-                    <div class="form-inner">
-                      <?php //include(TEMPLATEPATH . '/lib/includes/contact.form.php'); ?>
-                      </div>
-            
-                    </div>get-in-touch -->
-                </div>
-             
               </div> <!-- /row-fluid -->
         </div> <!-- /container-fluid -->
       </section><!-- /about-me -->
