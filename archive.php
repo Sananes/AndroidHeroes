@@ -58,7 +58,7 @@ get_header();
                 </div> <!-- /intro -->
 
                 <div class="span5 profile">
-                  <img src="<?php the_field('profile_image'); ?>" width="350" height="350" class="profile-img" />
+                  <img src="<?php bloginfo('template_directory');?>/timthumb.php?src=<?php the_field('profile_image'); ?>&q=85" width="350" height="350" class="profile-img" />
                   <?php if(get_field('main_skill')) : ?><p><?php the_title(); ?> - <?php the_field('main_skill'); ?></p><?php else: ?><p><?php the_title(); ?> - Developer</p><?php endif; ?>
                 </div> <!-- /browser-slider -->
                 <?php } ?>
@@ -114,7 +114,7 @@ get_header();
                 
                   <!-- Carousel items -->      
                   <div class="item">
-                    <img src="<?php the_sub_field('project_image'); ?>" />
+                    <img src="<?php bloginfo('template_directory');?>/timthumb.php?src=<?php the_sub_field('project_image'); ?>&w=546&q=85" />
                   </div> <!-- /item -->
                   <?php endwhile; ?>
                   </div> <!-- /carousel-inner -->
@@ -158,7 +158,7 @@ get_header();
               <div class="row-fluid">
                 <?php while(has_sub_field('portfolio_images')): // Output Portfolio Images ?> 
                 <div class="portfolio-item span4">
-                  <img src="<?php if(get_sub_field('portfolio_image')) { ?><?php the_sub_field('portfolio_image'); ?><?php } else { echo theme_images() . 'portfolio-default.png'; } ?>" />                 
+                  <img src="<?php if(get_sub_field('portfolio_image')) { ?><?php bloginfo('template_directory');?>/timthumb.php?src=<?php the_sub_field('portfolio_image'); ?>&q=85<?php } else { echo theme_images() . 'portfolio-default.png'; } ?>" />                 
                 </div> <!-- /portfolio-item -->
                 <?php endwhile; ?>
                 
@@ -183,7 +183,7 @@ get_header();
                 </div> <!-- /span6 -->
 
                  <div class="span6 profile">
-                  <img src="<?php the_field('profile_image'); ?>" width="350" height="350" class="profile-img" />
+                  <img src="<?php bloginfo('template_directory');?>/timthumb.php?src=<?php the_field('profile_image'); ?>&w=350&h=350&q=85" width="350" height="350" class="profile-img" />
                 
                 </div>
 

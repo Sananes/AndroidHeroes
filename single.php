@@ -58,7 +58,7 @@ get_header();
                 </div> <!-- /intro -->
 
                 <div class="span5 profile">
-                  <img src="<?php the_field('profile_image'); ?>" width="350" height="350" class="profile-img" />
+                  <img src="<?php bloginfo('template_directory');?>/timthumb.php?src=<?php the_field('profile_image'); ?>&q=85" width="350" height="350" class="profile-img" />
                   <?php if(get_field('main_skill')) : ?><p><?php the_title(); ?> - <?php the_field('main_skill'); ?></p><?php else: ?><p><?php the_title(); ?> - Developer</p><?php endif; ?>
                 </div> <!-- /browser-slider -->
                 <?php } ?>
