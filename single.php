@@ -177,7 +177,7 @@ get_header();
                   <div class="social inline"><?php the_field('social_media'); ?></div>
                 <a href="#contactForm" data-toggle="modal" class="btn btn-success btn-large get-in-touch"><span>Get in touch</a>
                   <div class="mini-contact">
-                    <a href="mailto:info@cmshero.es">info@cmshero.es</a> <span class="phone">+1 098 998 001</span>
+                    <a href="mailto:info@cmshero.es">info@cmshero.es</a> <span class="phone"><?php the_field('phone_number'); ?></span>
                   </div>
                     
                 </div> <!-- /span6 -->
