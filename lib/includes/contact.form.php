@@ -56,7 +56,7 @@
                                         <p class="error">Sorry, an error occured.<p>
 
                              <?php } ?>
-                              <form action="<?php the_permalink(); ?>/thank-you" id="contact_me" method="post">
+                              <form action="<?php the_permalink(); ?>" id="contact_me" method="post">
 
                                <div id="form" class="row-fluid">
                                 <div class="field">
