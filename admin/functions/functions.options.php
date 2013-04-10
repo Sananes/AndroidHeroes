@@ -206,7 +206,13 @@ $of_options[] = array( 	"name" 		=> "Custom CSS",
 $of_options[] = array( 	"name" 		=> "Contact Form",
 						"type" 		=> "heading"
 				);
-				
+$of_options[] = array( 	"name" 		=> "Form Title",
+						"desc" 		=> "Enter your contact form title",
+						"id" 		=> "contact_form_title",
+						"std" 		=> "Talk to us",
+						"icon" 		=> true,
+						"type" 		=> "text"
+				);				
 $of_options[] = array( 	"name" 		=> "Email Address",
 						"desc" 		=> "Enter the email address you'd like to receive from the contact form",
 						"id" 		=> "email_address_contact",
@@ -228,6 +234,7 @@ $of_options[] = array( 	"name" 		=> "Contact Form Button",
 						"icon" 		=> true,
 						"type" 		=> "text"
 				);
+
 $of_options[] = array( 	"name" 		=> "Developer Settings",
 						"type" 		=> "heading"
 				);

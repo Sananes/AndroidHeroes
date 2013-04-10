@@ -1,7 +1,7 @@
 <div id="contactForm" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
  <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Talk to us</h3>
+    <h3><?php $data['contact_form_title']; ?></h3>
   </div> <!-- modal-header -->
 
       <div class="modal-body">
