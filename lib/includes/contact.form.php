@@ -49,9 +49,10 @@
 
                               } ?>
                               <?php if(isset($emailSent) && $emailSent == true) { ?>
-                                      <div class="alert alert-success">
+                                     <?php print "<meta http-equiv=\"refresh\" content=\"0;URL=http://www.cmshero.es/thank-you\">" ?>
+                                      <!-- <div class="alert alert-success">
                                         Thanks, your email was sent successfully. We will get back to you as soon as possible!
-                                      </div>
+                                      </div> -->
                                     <?php } elseif(isset($hasError) || isset($captchaError)) { ?>
                                         <p class="error">Sorry, an error occured.<p>
 

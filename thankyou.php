@@ -14,8 +14,6 @@ Template Name: Thank You
 */
 
 get_header();
-
-a
 ?>
 <div class="container">
 <header class="header">
@@ -32,52 +30,15 @@ a
        </div>
 </header>
 <div class="clearfix"></div>
-<section id="platforms">
+<section id="thankyou">
  <div class="row-fluid">
-  <a href="<?php bloginfo('home'); ?>/magento/matt-ricks" class="platform-box span4">
-   
-      <img src="<?php theme_images(); ?>magento-heroes.png" />
-      <h2>Magento Hereoes</h2>
+<?php while ( have_posts() ) : the_post(); ?>
+  <h2><?php the_title(); ?></h2>
+
+  <p><?php the_content(); ?></p>
 
 
-</a>
-  <a href="<?php bloginfo('home'); ?>/ux/aaron-sananes" class="platform-box span4">
-
-      <img src="<?php theme_images(); ?>ux-heroes.png" />
-      <h2>UX/UI Hereoes</h2>
-
-  
-</a>
-  <a href="<?php bloginfo('home'); ?>/frontend/" class="platform-box span4">
-
-      <img src="<?php theme_images(); ?>frontend-heroes.png" />
-      <h2>Frontend Hereoes</h2>
-
-  
-</a>
-</div> <!-- /row-fluid -->
-<div class="row-fluid">
-  <a href="<?php bloginfo('home'); ?>/drupal" class="platform-box span4">
-
-      <img src="<?php theme_images(); ?>drupal-heroes.png" />
-      <h2>Drupal Hereoes</h2>
-
-
-</a>
-  <a href="<?php bloginfo('home'); ?>/wordpress/" class="platform-box span4">
-
-      <img src="<?php theme_images(); ?>wordpress-heroes.png" />
-      <h2>WordPress Hereoes</h2>
-
-  
-</a>
-  <a href="<?php bloginfo('home'); ?>/android/" class="platform-box span4">
-
-      <img src="<?php theme_images(); ?>android-heroes.png" />
-      <h2>Android Hereoes</h2>
-
-  
-</a>
+<?php endwhile; ?>
 </div> <!-- /row-fluid -->
   </section>
 </div> <!-- /container -->
