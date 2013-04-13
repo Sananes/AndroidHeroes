@@ -7,6 +7,8 @@
       <div class="modal-body">
                               <?php
                               if(isset($_POST['submitted'])) {
+
+                                  $referrer = trim($_POST['referrer']);
                                 if(trim($_POST['contactName']) === '') {
                                   $nameError = 'Please enter your name.';
                                   $hasError = true;
@@ -40,7 +42,7 @@
                                   $emailTo = $data['email_address_contact'];
                                   $personalSubject = $data['email_subject'];
                                   $subject = $name. ' : ' .$emotional_state;
-                                  $body = "Name: $name \n\n Emotional State: $emotional_state \n\nPhone Number: $phone_number \n\nEmail: $email \n\nMessage: $your_message";
+                                  $body = "Name: $name \n\n Emotional State: $emotional_state \n\nPhone Number: $phone_number \n\nEmail: $email \n\nMessage: $your_message \n\nReferrer: $referrer";
                                   $headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
                                   wp_mail($emailTo, $subject, $body, $headers);
@@ -106,6 +108,7 @@
                                <label> </label>
                                <div id="input-field"><button type="submit" name="submit" class="btn btn-success btn-large"><?php echo $data['email_button']; ?></button></div>
                               <input type="hidden" name="submitted" id="submitted" value="true" />
+                              <input type="hidden" id="referer" name="referer" value="<?php echo $_SERVER['HTTP_REFERER']; ?>" />
                                      </div>   
                               </form>
 
