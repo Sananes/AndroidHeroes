@@ -8,7 +8,7 @@
                               <?php
                               if(isset($_POST['submitted'])) {
 
-                                  $referrer = trim($_POST['referrer']);
+                                  $referrer = $_POST['referer'];
                                 if(trim($_POST['contactName']) === '') {
                                   $nameError = 'Please enter your name.';
                                   $hasError = true;
