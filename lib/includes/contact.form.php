@@ -108,7 +108,7 @@
                                <label> </label>
                                <div id="input-field"><button type="submit" name="submit" class="btn btn-success btn-large"><?php echo $data['email_button']; ?></button></div>
                               <input type="hidden" name="submitted" id="submitted" value="true" />
-                              <input type="hidden" id="referer" name="referer" value="<?php echo $_SERVER['HTTP_REFERER']; ?>" />
+                              <input type="hidden" id="referer" name="referer" value="<?php the_permalink(); ?>" />
                                      </div>   
                               </form>
 
